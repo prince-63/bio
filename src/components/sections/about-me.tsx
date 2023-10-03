@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import PrinceKumar from '../../../public/images/prince kumar.jpg';
+import PrinceKumar from '../../../public/images/prince_kumar.jpg';
 import Tag from '@/components/data-display/tag';
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
