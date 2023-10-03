@@ -1,5 +1,11 @@
-import { Github, Linkedin} from 'lucide-react';
+import {Github, Linkedin, Instagram, Facebook} from 'lucide-react';
+import { Url } from 'url';
 
+import LogoHTML from '/public/images/logos/icon-html.svg';
+import LogoCSS from '/public/images/logos/icon-css3.svg';
+import LogoSass from '/public/images/logos/icon-sass.svg';
+import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
+import LogoBootStrap from '/public/images/logos/icons-bootstrap.svg';
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
@@ -7,25 +13,23 @@ import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoExpress from '/public/images/logos/icon-express.svg';
 import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
 import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
-
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
-import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
-import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
-import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
+import LogoGitHub from '/public/images/logos/icon-github.svg';
+import LogoC from '/public/images/logos/icon-c.svg';
+import LogoCPP from '/public/images/logos/icon-c_p.svg';
+import LogoPython from '/public/images/logos/icon-python.svg';
+import LogoAndroidStudio from '/public/images/logos/icon-android-studio.svg';
+import LogoDart from '/public/images/logos/icon-dart.svg';
+import LogoFlutter from '/public/images/logos/icon-flutter.svg';
 
 import ProjectApnaBazar from '/public/images/apna.png';
 import ProjectWealthProperties from '/public/images/wealth.png'
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
+import PortfolioImage from '/public/images/portfolio_image.png'
+import UsabilityHubImage from '/public/images/usabilityhub.jpg'
+import ShopMeImage from '/public/images/shopme.png'
 
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
+import MicrosoftLearnStudentAmbassador from '/public/images/microsoft-learn-student-ambassador.png'
 
 import {
   ExperienceDetails,
@@ -57,6 +61,10 @@ export const NAV_LINKS = [
     href: '#skills',
   },
   {
+    label: 'Volunteer',
+    href:'#testimonials'
+  },
+  {
     label: 'Project',
     href: '#projects',
   },
@@ -74,10 +82,43 @@ export const SOCIAL_LINKS = [
   {
     icon: Linkedin,
     url: 'https://linkedin.com/in/princekumar62',
+  },
+  {
+    icon: Instagram,
+    url: 'https://instagram.com/princedncg',
+  },
+  {
+    icon: Facebook,
+    url: 'https://www.facebook.com/princedncg',
   }
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
+  {
+    label: 'Figma',
+    logo: LogoFigma,
+    url: 'https://www.figma.com/',
+  },
+  {
+    label: 'HTML',
+    logo: LogoHTML,
+    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+  },
+  {
+    label: 'CSS',
+    logo: LogoCSS,
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  },
+  {
+    label: 'Sass/Scss',
+    logo: LogoSass,
+    url: 'https://sass-lang.com/',
+  },
+  {
+    label: 'Tailwindcss',
+    logo: LogoTailwindcss,
+    url: 'https://tailwindcss.com/',
+  },
   {
     label: 'Javascript',
     logo: LogoJavascript,
@@ -87,6 +128,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     label: 'Typescript',
     logo: LogoTypescript,
     url: 'https://www.typescriptlang.org/',
+  },
+  {
+    label: 'BootStrap',
+    logo: LogoBootStrap,
+    url: 'https://getbootstrap.com/',
   },
   {
     label: 'React',
@@ -110,66 +156,145 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.mongodb.com/',
   },
   {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
-    label: 'Tailwindcss',
-    logo: LogoTailwindcss,
-    url: 'https://tailwindcss.com/',
-  },
-  {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
-  },
-  {
     label: 'Git',
     logo: LogoGit,
     url: 'https://git-scm.com/',
   },
+  {
+    label: 'GitHub',
+    logo: LogoGitHub,
+    url: 'https://github.com/',
+  },
+  {
+    label: 'C',
+    logo: LogoC,
+    url: 'https://cplusplus.com/',
+  },
+  {
+    label: 'C++',
+    logo: LogoCPP,
+    url: 'https://cplusplus.com/',
+  },
+  {
+    label: 'Python',
+    logo: LogoPython,
+    url: 'https://www.python.org/',
+  },
+  {
+    label: 'Android Studio',
+    logo: LogoAndroidStudio,
+    url: 'https://developer.android.com/studio',
+  },
+  {
+    label: 'Dart',
+    logo: LogoDart,
+    url: 'https://dart.dev/',
+  },
+  {
+    label: 'Flutter',
+    logo: LogoFlutter,
+    url: 'https://flutter.dev/',
+  },
 ];
 
-export const EXPERIENCES: ExperienceDetails[] = [
-  {
-    logo: LogoUpwork,
-    logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
-    currentlyWorkHere: true,
-    summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
-    ],
-  },
-  {
-    logo: LogoGreenApex,
-    darkModeLogo: LogoGreenApexLight,
-    logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
-    summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
-    ],
-  },
-  {
-    logo: LogoDotnpixel,
-    darkModeLogo: LogoDotnpixelLight,
-    logoAlt: 'Dotnpixel logo',
-    position: 'Full Stack Developer',
-    startDate: new Date(2015, 11),
-    endDate: new Date(2017, 4),
-    summary: ['Worked as a full stack developer (React / Laravel).'],
-  },
-];
+// export const EXPERIENCES: ExperienceDetails[] = [
+//   {
+//     logo: LogoUpwork,
+//     logoAlt: 'Upwork logo',
+//     position: 'Independent Freelancer',
+//     startDate: new Date(2021, 10),
+//     currentlyWorkHere: true,
+//     summary: [
+//       'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
+//       'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+//     ],
+//   },
+//   {
+//     logo: LogoGreenApex,
+//     darkModeLogo: LogoGreenApexLight,
+//     logoAlt: 'Greenapex logo',
+//     position: 'Team Lead',
+//     startDate: new Date(2017, 6),
+//     endDate: new Date(2021, 9),
+//     summary: [
+//       'Acted as team lead in different projects.',
+//       'Brainstormed new ideas & gathered requirements for internal projects.',
+//       'Designed architecture of different projects (frontend + backend).',
+//       'Worked on enterprise-level projects for a variety of clients.',
+//       'Handled sprint planning & task distribution.',
+//     ],
+//   },
+//   {
+//     logo: LogoDotnpixel,
+//     darkModeLogo: LogoDotnpixelLight,
+//     logoAlt: 'Dotnpixel logo',
+//     position: 'Full Stack Developer',
+//     startDate: new Date(2015, 11),
+//     endDate: new Date(2017, 4),
+//     summary: ['Worked as a full stack developer (React / Laravel).'],
+//   },
+// ];
 
 export const PROJECTS: ProjectDetails[] = [
+  {
+    name: 'Portfolio',
+    description:
+      'A frontend website clone',
+    url: '#',
+    previewImage: PortfolioImage,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Typescript',
+      'React',
+      'Bootstrap',
+      'TailwindCSS',
+      'React Js',
+      'Next Js',
+    ],
+  },
+  {
+    name: 'ApnaBazar',
+    description:
+    'A food app website landing page.',
+    url: 'https://apnabazarapp.netlify.app/',
+    previewImage: ProjectApnaBazar,
+    technologies: [
+      'HTML',
+      'CSS',
+      'Bootstrap',
+      'JavaScript',
+      'Figma',
+    ],
+  },
+  {
+    name: 'ShopMe',
+    description:
+      'This project is a landing page clone oits usability testing andf the UsabilityHub website, a platform known for  user feedback services.',
+    url: 'https://aquamarine-cendol-1a056d.netlify.app/',
+    previewImage: ShopMeImage,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Figma',
+    ],
+  },
+  {
+    name: 'UsabilityHub',
+    description:
+      'This project is a landing page clone oits usability testing andf the UsabilityHub website, a platform known for  user feedback services.',
+    url: 'https://us-ability-hub.netlify.app/',
+    previewImage: UsabilityHubImage,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Bootstrap',
+    ],
+  },
   {
     name: 'Wealth Properties',
     description:
@@ -179,63 +304,20 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: [
       'HTML',
       'CSS',
-      'JAVASCRIPT',
+      'JavaScript',
       'React',
       'Bootstrap',
     ],
   },
-  {
-    name: 'ApnaBazar',
-    description:
-      'A food app website landing page.',
-    url: 'https://apnabazarapp.netlify.app/',
-    previewImage: ProjectApnaBazar,
-    technologies: [
-      'HTML',
-      'CSS',
-      'Bootstrap',
-      'Javascript',
-      'FIGMA'
-    ],
-  },
-  // {
-  //   name: 'Pepehousing',
-  //   description:
-  //     'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-  //   url: 'https://pepehousing.com',
-  //   previewImage: ProjectPepehousing,
-  //   technologies: [
-  //     'React',
-  //     'Next.js',
-  //     'Typescript',
-  //     'Tailwindcss',
-  //     'Redux Toolkit',
-  //     'React Query',
-  //     'Storybook',
-  //   ],
-  // },
 ];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: 'Krisztian Gyuris',
-    personAvatar: AvatarKrisztian,
-    title: 'Founder - inboxgenie.io',
-    testimonial:
-      'Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.',
-  },
-  {
-    personName: 'Eugen Esanu',
-    personAvatar: AvatarEugen,
-    title: 'Founder - shosho.design',
-    testimonial:
-      'Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.',
-  },
-  {
-    personName: 'Joe Matkin',
-    personAvatar: AvatarDummy,
-    title: 'Freelancer',
-    testimonial:
-      'Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.',
-  },
+    organizationName: "Microsoft Learn Student Ambassador",
+    organizationLogo: MicrosoftLearnStudentAmbassador,
+    about: 'Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.',
+    startingDate: 'Aug-2023',
+    endingDate: 'Present',
+    link: "https://mvp.microsoft.com/studentambassadors/certificate/6d07cc2b-1fb9-4f27-97b7-2bfe6a6c0f41"
+  }
 ];
