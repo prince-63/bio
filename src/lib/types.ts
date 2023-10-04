@@ -27,8 +27,10 @@ export type ProjectDetails = {
 };
 
 export type TestimonialDetails = {
-  personName: string;
-  personAvatar?: string | StaticImageData;
-  testimonial: string;
-  title: string;
+  organizationName?: string;
+  organizationLogo?: string | StaticImageData;
+  about?: string;
+  startingDate?: string;
+  endingDate?: string;
+  link?: string;
 };
