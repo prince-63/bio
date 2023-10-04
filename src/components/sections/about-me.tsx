@@ -43,7 +43,7 @@ const AboutMeSection = () => {
             >
               developer.
             </Link>{' '}
-            who focuses on full-stack development, particularly using (React.js & Node.js). I'm excited about making digital products look great and work smoothly. I care about user experience, making designs look perfect, and writing code that's easy to read and runs really well
+            who focuses on full-stack development, particularly using (React.js & Node.js). I&apos;m excited about making digital products look great and work smoothly. I care about user experience, making designs look perfect, and writing code that&apos;s easy to read and runs really well
           </Typography>
           <Typography>
             I began my journey as a web developer in 2022, and since then,
