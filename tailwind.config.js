@@ -57,6 +57,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// Ref :: https://twitter.com/steventey/status/1677339375645126659
-// Ref :: https://tailwindcss.com/docs/customizing-colors#using-css-variables

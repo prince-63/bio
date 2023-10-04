@@ -1,37 +1,36 @@
 import {Github, Linkedin, Instagram, Facebook} from 'lucide-react';
-import { Url } from 'url';
 
-import LogoHTML from '/public/images/logos/icon-html.svg';
-import LogoCSS from '/public/images/logos/icon-css3.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
-import LogoBootStrap from '/public/images/logos/icons-bootstrap.svg';
-import LogoJavascript from '/public/images/logos/icon-javascript.svg';
-import LogoTypescript from '/public/images/logos/icon-typescript.svg';
-import LogoReact from '/public/images/logos/icon-react.svg';
-import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoGit from '/public/images/logos/icon-git.svg';
-import LogoGitHub from '/public/images/logos/icon-github.svg';
-import LogoC from '/public/images/logos/icon-c.svg';
-import LogoCPP from '/public/images/logos/icon-c_p.svg';
-import LogoJAVA from '/public/images/logos/icon-java.svg';
-import LogoPython from '/public/images/logos/icon-python.svg';
-import LogoAndroidStudio from '/public/images/logos/icon-android-studio.svg';
-import LogoDart from '/public/images/logos/icon-dart.svg';
-import LogoFlutter from '/public/images/logos/icon-flutter.svg';
+import LogoHTML from '../../public/images/logos/icon-html.svg';
+import LogoCSS from '../../public/images/logos/icon-css3.svg';
+import LogoSass from '../../public/images/logos/icon-sass.svg';
+import LogoTailwindcss from '../../public/images/logos/icon-tailwindcss.svg';
+import LogoBootStrap from '../../public/images/logos/icons-bootstrap.svg';
+import LogoJavascript from '../../public/images/logos/icon-javascript.svg';
+import LogoTypescript from '../../public/images/logos/icon-typescript.svg';
+import LogoReact from '../../public/images/logos/icon-react.svg';
+import LogoNodejs from '../../public/images/logos/icon-nodejs.svg';
+import LogoExpress from '../../public/images/logos/icon-express.svg';
+import LogoExpressLight from '../../public/images/logos/icon-express-light.svg';
+import LogoMongoDB from '../../public/images/logos/icon-mongodb.svg';
+import LogoFigma from '../../public/images/logos/icon-figma.svg';
+import LogoGit from '../../public/images/logos/icon-git.svg';
+import LogoGitHub from '../../public/images/logos/icon-github.svg';
+import LogoC from '../../public/images/logos/icon-c.svg';
+import LogoCPP from '../../public/images/logos/icon-c_p.svg';
+import LogoJAVA from '../../public/images/logos/icon-java.svg';
+import LogoPython from '../../public/images/logos/icon-python.svg';
+import LogoAndroidStudio from '../../public/images/logos/icon-android-studio.svg';
+import LogoDart from '../../public/images/logos/icon-dart.svg';
+import LogoFlutter from '../../public/images/logos/icon-flutter.svg';
 
-import ProjectApnaBazar from '/public/images/apna.png';
-import ProjectWealthProperties from '/public/images/wealth.png'
-import PortfolioImage from '/public/images/portfolio_image.png'
-import UsabilityHubImage from '/public/images/usabilityhub.jpg'
-import ShopMeImage from '/public/images/shopme.png'
-import TodoAppImage from '/public/images/todoapp.png'
+import ProjectApnaBazar from '../../public/images/apna.png';
+import ProjectWealthProperties from '../../public/images/wealth.png';
+import PortfolioImage from '../../public/images/portfolio_image.png';
+import UsabilityHubImage from '../../public/images/usabilityhub.jpg';
+import ShopMeImage from '../../public/images/shopme.png';
+import TodoAppImage from '../../public/images/todoapp.png';
 
-import MicrosoftLearnStudentAmbassador from '/public/images/microsoft-learn-student-ambassador.png'
+import MicrosoftLearnStudentAmbassador from '../../public/images/microsoft-learn-student-ambassador.png'
 
 import {
   ExperienceDetails,
@@ -204,43 +203,43 @@ export const TECHNOLOGIES: TechDetails[] = [
   },
 ];
 
-// export const EXPERIENCES: ExperienceDetails[] = [
-//   {
-//     logo: LogoUpwork,
-//     logoAlt: 'Upwork logo',
-//     position: 'Independent Freelancer',
-//     startDate: new Date(2021, 10),
-//     currentlyWorkHere: true,
-//     summary: [
-//       'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-//       'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
-//     ],
-//   },
-//   {
-//     logo: LogoGreenApex,
-//     darkModeLogo: LogoGreenApexLight,
-//     logoAlt: 'Greenapex logo',
-//     position: 'Team Lead',
-//     startDate: new Date(2017, 6),
-//     endDate: new Date(2021, 9),
-//     summary: [
-//       'Acted as team lead in different projects.',
-//       'Brainstormed new ideas & gathered requirements for internal projects.',
-//       'Designed architecture of different projects (frontend + backend).',
-//       'Worked on enterprise-level projects for a variety of clients.',
-//       'Handled sprint planning & task distribution.',
-//     ],
-//   },
-//   {
-//     logo: LogoDotnpixel,
-//     darkModeLogo: LogoDotnpixelLight,
-//     logoAlt: 'Dotnpixel logo',
-//     position: 'Full Stack Developer',
-//     startDate: new Date(2015, 11),
-//     endDate: new Date(2017, 4),
-//     summary: ['Worked as a full stack developer (React / Laravel).'],
-//   },
-// ];
+export const EXPERIENCES: ExperienceDetails[] = [
+  {
+    logo: ProjectApnaBazar,
+    logoAlt: 'Upwork logo',
+    position: 'Independent Freelancer',
+    startDate: new Date(2021, 10),
+    currentlyWorkHere: true,
+    summary: [
+      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
+      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+    ],
+  },
+  {
+    logo: ProjectApnaBazar,
+    darkModeLogo: ProjectApnaBazar,
+    logoAlt: 'Greenapex logo',
+    position: 'Team Lead',
+    startDate: new Date(2017, 6),
+    endDate: new Date(2021, 9),
+    summary: [
+      'Acted as team lead in different projects.',
+      'Brainstormed new ideas & gathered requirements for internal projects.',
+      'Designed architecture of different projects (frontend + backend).',
+      'Worked on enterprise-level projects for a variety of clients.',
+      'Handled sprint planning & task distribution.',
+    ],
+  },
+  {
+    logo: ProjectApnaBazar,
+    darkModeLogo: ProjectApnaBazar,
+    logoAlt: 'Dotnpixel logo',
+    position: 'Full Stack Developer',
+    startDate: new Date(2015, 11),
+    endDate: new Date(2017, 4),
+    summary: ['Worked as a full stack developer (React / Laravel).'],
+  },
+];
 
 export const PROJECTS: ProjectDetails[] = [
   {
