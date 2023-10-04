@@ -34,19 +34,16 @@ const AboutMeSection = () => {
             Curious about me? Here you have it:
           </Typography>
           <Typography>
-            I&apos;m a passionate,{' '}
+            I&apos;m a passionate {' '}
             <Link
               noCustomization
               externalLink
               withUnderline
               href={EXTERNAL_LINKS.GITHUB}
             >
-              self-proclaimed developer
+              developer.
             </Link>{' '}
-            who specializes in full stack development (React.js & Node.js). I am
-            enthusiastic about bringing the technical and visual aspects of
-            digital products to life. User experience, pixel perfect design, and
-            writing clear, readable, highly performant code matters to me.
+            who focuses on full-stack development, particularly using (React.js & Node.js). I'm excited about making digital products look great and work smoothly. I care about user experience, making designs look perfect, and writing code that's easy to read and runs really well
           </Typography>
           <Typography>
             I began my journey as a web developer in 2022, and since then,

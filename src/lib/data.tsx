@@ -18,6 +18,7 @@ import LogoGit from '/public/images/logos/icon-git.svg';
 import LogoGitHub from '/public/images/logos/icon-github.svg';
 import LogoC from '/public/images/logos/icon-c.svg';
 import LogoCPP from '/public/images/logos/icon-c_p.svg';
+import LogoJAVA from '/public/images/logos/icon-java.svg';
 import LogoPython from '/public/images/logos/icon-python.svg';
 import LogoAndroidStudio from '/public/images/logos/icon-android-studio.svg';
 import LogoDart from '/public/images/logos/icon-dart.svg';
@@ -28,6 +29,7 @@ import ProjectWealthProperties from '/public/images/wealth.png'
 import PortfolioImage from '/public/images/portfolio_image.png'
 import UsabilityHubImage from '/public/images/usabilityhub.jpg'
 import ShopMeImage from '/public/images/shopme.png'
+import TodoAppImage from '/public/images/todoapp.png'
 
 import MicrosoftLearnStudentAmbassador from '/public/images/microsoft-learn-student-ambassador.png'
 
@@ -176,6 +178,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://cplusplus.com/',
   },
   {
+    label: 'Java',
+    logo: LogoJAVA,
+    url: 'https://www.java.com/en/',
+  },
+  {
     label: 'Python',
     logo: LogoPython,
     url: 'https://www.python.org/',
@@ -239,7 +246,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'Portfolio',
     description:
-      'A frontend website clone',
+      'A developer portfolio website is a powerful tool to showcase your skills, accomplishments, and personality to the world. As my personal digital space, it reflects my unique identity as a developer. This website should not only display my technical expertise but also tell my story. i am using this website to exhibit my projects, provide insights into my development journey, and offer a glimpse into my passion for coding. By crafting an engaging and informative portfolio, i can make a strong impression on potential employers, clients, and collaborators. my portfolio website is my opportunity to shine and leave a lasting impact in the competitive world of tech.',
     url: '#',
     previewImage: PortfolioImage,
     technologies: [
@@ -255,9 +262,21 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
   {
+    name: 'Todo App',
+    description:
+    "A Todo app built with Flutter and Dart is a versatile and user-friendly task management tool. Leveraging the Flutter framework's flexibility and Dart's efficiency, this app offers a smooth and consistent experience across different platforms, including Android, iOS, and web browsers. It allows users to create, organize, and manage tasks with ease. The app's intuitive interface and simple design make it easy to use and navigate.",
+    url: 'https://git@github.com/prince-63/todo_app',
+    previewImage: TodoAppImage,
+    technologies: [
+      'Android Studio',
+      'Dart',
+      'Flutter',
+    ],
+  },
+  {
     name: 'ApnaBazar',
     description:
-    'A food app website landing page.',
+    'A food website landing page is like the front door to a world of delicious food. It uses tempting pictures and tasty descriptions to draw people in and makes it easy to find their way around the site. It s a sneak peek of the yummy things you can find on the website. This page has colorful pictures of tasty dishes and catchy headlines that make you hungry and curious. It might have quick links to menus, reservations, or special deals to make things easy for you. A well-made food website landing page makes you want to explore and try the food. Its a crucial part of a successful food website.',
     url: 'https://apnabazarapp.netlify.app/',
     previewImage: ProjectApnaBazar,
     technologies: [
@@ -271,7 +290,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'ShopMe',
     description:
-      'This project is a landing page clone oits usability testing andf the UsabilityHub website, a platform known for  user feedback services.',
+      '"ShopMe" is a digital product website that brings the world of online shopping to your fingertips. Our landing page is your gateway to a diverse range of products, all at your convenience. Explore our website to discover the latest offerings and start shopping with ease.',
     url: 'https://aquamarine-cendol-1a056d.netlify.app/',
     previewImage: ShopMeImage,
     technologies: [
@@ -284,7 +303,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'UsabilityHub',
     description:
-      'This project is a landing page clone oits usability testing andf the UsabilityHub website, a platform known for  user feedback services.',
+      'Creating a clone of the UsabilityHub website landing page is a fascinating project that involves replicating the user-friendly design and functionality of this well-established usability testing platform. This project presents an excellent opportunity to gain hands-on experience in web development and design. By dissecting the UsabilityHub landing page and reconstructing it, i can hone my skills in HTML, CSS, and JavaScript while also gaining insight into user experience principles.',
     url: 'https://us-ability-hub.netlify.app/',
     previewImage: UsabilityHubImage,
     technologies: [
@@ -298,7 +317,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'Wealth Properties',
     description:
-      'A frontend website clone',
+      'A Wealth Properties website landing page clone project involves replicating the design and functionality of a real estate investment website, specifically focusing on the landing page. This ambitious endeavor allows my to create a digital space that mirrors the features, aesthetics, and user experience of a successful property investment platform. By undertaking this project, i can gain valuable insights and experience in web development, design, and content creation. It provides an opportunity to sharpen my skills in HTML, CSS, JavaScript.',
     url: 'https://wealth-properties.netlify.app/',
     previewImage: ProjectWealthProperties,
     technologies: [
