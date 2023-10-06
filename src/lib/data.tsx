@@ -1,5 +1,4 @@
 import {Github, Linkedin, Instagram, Facebook} from 'lucide-react';
-
 import LogoHTML from '../../public/images/logos/icon-html.svg';
 import LogoCSS from '../../public/images/logos/icon-css3.svg';
 import LogoSass from '../../public/images/logos/icon-sass.svg';

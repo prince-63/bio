@@ -8,12 +8,12 @@ export type TechDetails = {
 };
 
 export type ExperienceDetails = {
-  logo: string | StaticImageData;
+  logo?: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
-  logoAlt: string;
-  position: string;
+  logoAlt?: string;
+  position?: string;
   currentlyWorkHere?: boolean;
-  startDate: Date;
+  startDate?: Date;
   endDate?: Date;
   summary: string[];
 };
