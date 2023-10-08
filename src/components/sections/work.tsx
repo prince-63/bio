@@ -4,19 +4,25 @@ import Tag from '@/components/data-display/tag';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import Reavel from '@/hooks/Reavel';
+import transition from '@/hooks/transition';
+import ScrollAnimation from '@/hooks/scrollAnimation';
 
 const WorkSection = () => {
   return (
     <Container id="projects">
       <div className="flex flex-col items-center gap-4">
+        <ScrollAnimation>
         <div className="self-center">
           <Tag label="Projects" />
         </div>
+        </ScrollAnimation>
+        <ScrollAnimation>
         <Reavel>
         <Typography variant="subtitle" className="max-w-xl text-center">
           Some of the projects I have built:
         </Typography>
         </Reavel>
+        </ScrollAnimation>
       </div>
 
       {PROJECTS?.map((project, index) => (
@@ -30,4 +36,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default transition(WorkSection);

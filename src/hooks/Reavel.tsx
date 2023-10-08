@@ -11,11 +11,14 @@ export default function Reavel({ children, width = "fit-content" }: Props){
     const slideControls = useAnimation();
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
-
     useEffect(() => {
         if (isInView) {
             mainControls.start("visible");
             slideControls.start("visible");
+        }
+        else {
+            mainControls.set("hidden");
+            slideControls.set("hidden");
         }
     }, [isInView])
 
@@ -56,3 +59,54 @@ export default function Reavel({ children, width = "fit-content" }: Props){
         </div>
     );
 }
+
+
+// export default function Reavel({ children, width = "fit-content" }: Props){
+//     const mainControls = useAnimation();
+//     const slideControls = useAnimation();
+//     const ref = useRef(null);
+//     const isInView = useInView(ref, {once: true});
+//     useEffect(() => {
+//         if (isInView) {
+//             mainControls.start("visible");
+//             slideControls.start("visible");
+//         }
+//     }, [isInView])
+
+//     return (
+//         <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+//             <motion.div
+//                 ref={ref}
+//                 animate={mainControls}
+//                 initial="hidden"
+//                 transition={{ duration: 0.5, delay: 0.25}}
+//                 variants={{
+//                     hidden: { opacity: 0, y: 75 },
+//                     visible: { opacity: 1, y: 0 },
+//                 }}
+//                 style={{ width }}
+//             >
+//                 {children}
+//             </motion.div>
+//             <motion.div 
+//             variants={{
+//                 hidden: {left: "0"},
+//                 visible: {left: "100%"},
+//             }}
+
+//             initial="hidden"
+//             animate={slideControls}
+//             transition={{duration: 0.5, ease: "easeIn", delay: 0.1}}
+//             style ={{
+//                 position: "absolute",
+//                 top: 4,
+//                 bottom: 4,
+//                 left: 0,
+//                 right: 0,
+//                 background: "#b6d3e9",
+//                 zIndex: 20,
+//             }}
+//             />
+//         </div>
+//     );
+// }

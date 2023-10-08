@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Scroll } from 'lucide-react';
 
 import { ProjectDetails as ProjectDetailsType } from '@/lib/types';
 import { mergeClasses } from '@/lib/utils';
@@ -8,6 +8,7 @@ import Link from '@/components/navigation/link';
 import Tag from '@/components/data-display/tag';
 import Card from '@/components/layout/card';
 import Reavel from '@/hooks/Reavel';
+import ScrollAnimation from '@/hooks/scrollAnimation';
 
 type ProjectDetailsProps = ProjectDetailsType & {
   layoutType: 'default' | 'reverse';
@@ -32,16 +33,18 @@ const ProjectDetails = ({
             : 'md:order-last md:rounded-r-xl md:border-l'
         )}
       >
-        <Reavel>
-        <Link noCustomization href={url} externalLink>
-          <Image
-            src={previewImage}
-            alt={`${name} preview`}
-            className="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
-            style={{ objectFit: 'cover' }}
-          />
-        </Link>
-        </Reavel>
+        <ScrollAnimation>
+          <Reavel>
+            <Link noCustomization href={url} externalLink>
+              <Image
+                src={previewImage}
+                alt={`${name} preview`}
+                className="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
+                style={{ objectFit: 'cover' }}
+              />
+            </Link>
+          </Reavel>
+        </ScrollAnimation>
       </div>
 
       {/* Content */}
@@ -51,31 +54,39 @@ const ProjectDetails = ({
           layoutType === 'default' ? '' : 'md:order-first'
         )}
       >
-        <Reavel>
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
-          {name}
-        </Typography>
-        </Reavel>
-       <Reavel>
-       <Typography>{description}</Typography>
-       </Reavel>
+        <ScrollAnimation>
           <Reavel>
-          <div className="flex flex-wrap gap-2">
-          {technologies?.map((technology, index) => (
-            <Tag key={index} label={technology} />
-          ))}
-        </div>
+            <Typography variant="subtitle" className="font-semibold text-gray-900">
+              {name}
+            </Typography>
           </Reavel>
-        <Reavel>
-        <Link
-          href={url}
-          noCustomization
-          className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
-          externalLink
-        >
-          <ExternalLink />
-        </Link>
-        </Reavel>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Reavel>
+            <Typography>{description}</Typography>
+          </Reavel>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Reavel>
+            <div className="flex flex-wrap gap-2">
+              {technologies?.map((technology, index) => (
+                <Tag key={index} label={technology} />
+              ))}
+            </div>
+          </Reavel>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Reavel>
+            <Link
+              href={url}
+              noCustomization
+              className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
+              externalLink
+            >
+              <ExternalLink />
+            </Link>
+          </Reavel>
+        </ScrollAnimation>
       </div>
     </Card>
   );

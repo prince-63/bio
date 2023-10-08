@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="fixed transform origin-left top-200 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+        className="fixed z-20 transform origin-left top-200 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
         style={{ scaleX: scrollYProgress}}
       />
       <HeroSection />

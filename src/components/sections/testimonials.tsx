@@ -3,13 +3,17 @@ import Tag from '@/components/data-display/tag';
 import TestimonialDetails from '@/components/data-display/testimonial-details';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
+import transition from '@/hooks/transition';
+import ScrollAnimation from '@/hooks/scrollAnimation';
 
 const TestimonialsSection = () => {
   return (
     <Container id="testimonials" className="bg-gray-50">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
+          <ScrollAnimation>
           <Tag label="Volunteer Experience" />
+          </ScrollAnimation>
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
           
@@ -25,4 +29,4 @@ const TestimonialsSection = () => {
   );
 };
 
-export default TestimonialsSection;
+export default transition(TestimonialsSection);
