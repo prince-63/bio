@@ -11,16 +11,16 @@ const SkillsSection = () => {
     <Container id='skills'>
       <div className="flex flex-col items-center gap-4">
         <ScrollAnimation>
-        <div className="self-center">
-          <Tag label="Skills" />
-        </div>
+          <div className="self-center">
+            <Tag label="Skills" />
+          </div>
         </ScrollAnimation>
         <ScrollAnimation>
-        <Reavel>
-        <Typography variant="subtitle" className="max-w-xl text-center">
-          The tools and technologies I am explored in my life:
-        </Typography>
-        </Reavel>
+          <Reavel>
+            <Typography variant="subtitle" className="max-w-xl text-center">
+              The tools and technologies I am explored in my life:
+            </Typography>
+          </Reavel>
         </ScrollAnimation>
       </div>
 
@@ -29,6 +29,7 @@ const SkillsSection = () => {
           <TechDetails {...technology} key={index} />
         ))}
       </div>
+
     </Container>
   );
 };
