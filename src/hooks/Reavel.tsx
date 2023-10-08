@@ -24,7 +24,7 @@ export default function Reavel({ children, width = "fit-content" }: Props){
                 ref={ref}
                 animate={mainControls}
                 initial="hidden"
-                transition={{ duration: 0.5, delay: 0.25}}
+                transition={{ duration: .8, delay: 0}}
                 variants={{
                     hidden: { opacity: 0, y: 75 },
                     visible: { opacity: 1, y: 0 },
@@ -41,14 +41,14 @@ export default function Reavel({ children, width = "fit-content" }: Props){
 
             initial="hidden"
             animate={slideControls}
-            transition={{duration: 0.5, ease: "easeIn", delay: 0.1}}
+            transition={{duration: 0.3, ease: "easeInOut", delay: 0}}
             style ={{
                 position: "absolute",
                 top: 4,
                 bottom: 4,
                 left: 0,
                 right: 0,
-                background: "#b6d3e9",
+                background: "#b6d3e930",
                 zIndex: 20,
             }}
             />

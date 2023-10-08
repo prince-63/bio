@@ -10,7 +10,7 @@ import ScrollAnimation from '@/hooks/scrollAnimation';
 const HeroSection = () => {
   return (
     <Container id="hero">
-      <div className="flex flex-col gap-12 md:flex-row">
+      <div className="flex md:mt-16 md:pt-3 flex-col gap-12 md:flex-row">
         {/* Image */}
         <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
           <ScrollAnimation>
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 </Typography>
               </Reavel>
               <Reavel>
-                <Typography>
+                <Typography className='mt-3'>
                   I&apos;m a Frontend developer (React.js) with a focus
                   on creating a resposive and good looking websites, also i passionate about coding and contibuting in openSource projects.
                 </Typography>

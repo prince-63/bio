@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ref :: https://twitter.com/steventey/status/1677339375645126659 */
 :root {
   --app-gray-default: 255 255 255;
   --app-gray-50: 249 250 251;

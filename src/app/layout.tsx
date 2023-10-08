@@ -6,7 +6,7 @@ import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin-ext"] });
 
 const title = 'Prince Kumar';
 const description =
@@ -26,30 +26,11 @@ export const metadata: Metadata = {
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-  // openGraph: {
-  //   type: 'website',
-  //   url,
-  //   title,
-  //   description,
-  //   siteName: title,
-  //   images: [
-  //     {
-  //       url: '/images/open-graph-sagar.png',
-  //     },
-  //   ],
-  // },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title,
-  //   description,
-  //   creator: '@shahsagarm',
-  //   images: '/images/open-graph-sagar.png',
-  // // },
-  // icons: {
-  //   icon: '/favicon.ico',
-  //   shortcut: '/favicon-16x16.png',
-  //   apple: '/apple-touch-icon.png',
-  // },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -59,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
+      <body className={`${inter.className} bg-gray text-gray-600 antialiased scroll-smooth`}>
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>

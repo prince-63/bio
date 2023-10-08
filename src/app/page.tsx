@@ -8,7 +8,6 @@ import TestimonialsSection from '@/components/sections/testimonials';
 import WorkSection from '@/components/sections/work';
 import { motion, useScroll } from "framer-motion";
 
-
 export default function Home() {
   const { scrollYProgress } = useScroll();
   return (
