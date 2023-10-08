@@ -16,10 +16,6 @@ export default function Reavel({ children, width = "fit-content" }: Props){
             mainControls.start("visible");
             slideControls.start("visible");
         }
-        else {
-            mainControls.set("hidden");
-            slideControls.set("hidden");
-        }
     }, [isInView])
 
     return (
