@@ -11,6 +11,7 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
+import Reavel from '@/hooks/Reavel';
 
 let email = 'princekumar.priku@gmail.com';
 let phone = '+91 6289296197';
@@ -47,14 +48,17 @@ const ContactSection = () => {
         <div className="self-center">
           <Tag label="Get in touch" />
         </div>
+        <Reavel>
         <Typography variant="subtitle" className="max-w-xl text-center">
           What’s next? Feel free to reach out to me if you are looking for a
           developer, have a query, or simply want to connect.
         </Typography>
+        </Reavel>
       </div>
 
       <div className="flex flex-col items-center gap-6 md:gap-12">
         <div className="flex flex-col items-center md:gap-4">
+          <Reavel>
           <div className="flex items-center gap-4 md:gap-5">
             <Mail className="h-6 w-6 md:h-8 md:w-8" />
             {/* <Link href={`mailto:${email}`}> */}
@@ -69,6 +73,8 @@ const ContactSection = () => {
               <Copy />
             </IconButton>
           </div>
+          </Reavel>
+          <Reavel>
           <div className="flex items-center gap-4 md:gap-5">
             <Phone className="h-6 w-6 md:h-8 md:w-8" />
             {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
@@ -83,12 +89,17 @@ const ContactSection = () => {
               <Copy />
             </IconButton>
           </div>
+          </Reavel>
         </div>
         <div className="flex flex-col items-center gap-2">
+          <Reavel>
           <Typography className="text-center">
             You may also find me on these platforms!
           </Typography>
+          </Reavel>
+          <Reavel>
           <SocialIcons />
+          </Reavel>
         </div>
       </div>
     </Container>

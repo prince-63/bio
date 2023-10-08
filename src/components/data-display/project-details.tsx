@@ -7,6 +7,7 @@ import Typography from '@/components/general/typography';
 import Link from '@/components/navigation/link';
 import Tag from '@/components/data-display/tag';
 import Card from '@/components/layout/card';
+import Reavel from '@/hooks/Reavel';
 
 type ProjectDetailsProps = ProjectDetailsType & {
   layoutType: 'default' | 'reverse';
@@ -31,6 +32,7 @@ const ProjectDetails = ({
             : 'md:order-last md:rounded-r-xl md:border-l'
         )}
       >
+        <Reavel>
         <Link noCustomization href={url} externalLink>
           <Image
             src={previewImage}
@@ -39,6 +41,7 @@ const ProjectDetails = ({
             style={{ objectFit: 'cover' }}
           />
         </Link>
+        </Reavel>
       </div>
 
       {/* Content */}
@@ -48,15 +51,22 @@ const ProjectDetails = ({
           layoutType === 'default' ? '' : 'md:order-first'
         )}
       >
+        <Reavel>
         <Typography variant="subtitle" className="font-semibold text-gray-900">
           {name}
         </Typography>
-        <Typography>{description}</Typography>
-        <div className="flex flex-wrap gap-2">
+        </Reavel>
+       <Reavel>
+       <Typography>{description}</Typography>
+       </Reavel>
+          <Reavel>
+          <div className="flex flex-wrap gap-2">
           {technologies?.map((technology, index) => (
             <Tag key={index} label={technology} />
           ))}
         </div>
+          </Reavel>
+        <Reavel>
         <Link
           href={url}
           noCustomization
@@ -65,6 +75,7 @@ const ProjectDetails = ({
         >
           <ExternalLink />
         </Link>
+        </Reavel>
       </div>
     </Card>
   );
