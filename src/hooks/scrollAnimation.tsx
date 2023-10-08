@@ -30,32 +30,3 @@ const ScrollAnimation = ({ children }: any) => {
     )
 }
 export default ScrollAnimation;
-
-// import React, { useRef, useEffect } from "react";
-
-// interface Props {
-//     children: JSX.Element;
-// }
-
-// export default function ScrollAnimation({ children }: Props) {
-//     const ref = useRef<HTMLDivElement>(null);
-
-//     useEffect(() => {
-//         const element = ref.current;
-//         if (element) {
-//             const handleScroll = () => {
-//                 const scrollTop = window.pageYOffset + window.innerHeight;
-//                 const elementTop = element.offsetTop + element.offsetHeight / 2;
-//                 if (scrollTop > elementTop) {
-//                     element.classList.add("animate");
-//                 } else {
-//                     element.classList.remove("animate");
-//                 }
-//             };
-//             window.addEventListener("scroll", handleScroll);
-//             return () => window.removeEventListener("scroll", handleScroll);
-//         }
-//     }, [ref]);
-
-//     return <div ref={ref}>{children}</div>;
-// }
