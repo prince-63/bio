@@ -1,5 +1,4 @@
 import Image from "next/image";
-import transition from "@/hooks/transition";
 import PrinceKumar from "../../../public/images/prince_kumar.jpg";
 import Tag from "@/components/data-display/tag";
 import Container from "@/components/layout/container";
@@ -132,4 +131,4 @@ const AboutMeSection = () => {
     );
 };
 
-export default transition(AboutMeSection);
+export default AboutMeSection;

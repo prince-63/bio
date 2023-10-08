@@ -11,7 +11,6 @@ import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 import Reavel from '@/hooks/Reavel';
-import transition from '@/hooks/transition';
 import ScrollAnimation from '@/hooks/scrollAnimation';
 
 let email = 'princekumar.priku@gmail.com';
@@ -117,4 +116,4 @@ const ContactSection = () => {
   );
 };
 
-export default transition(ContactSection);
+export default ContactSection;

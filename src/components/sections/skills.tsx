@@ -4,7 +4,6 @@ import TechDetails from '@/components/data-display/tech-details';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import Reavel from '@/hooks/Reavel';
-import transition from '@/hooks/transition';
 import ScrollAnimation from '@/hooks/scrollAnimation';
 
 const SkillsSection = () => {
@@ -34,4 +33,4 @@ const SkillsSection = () => {
   );
 };
 
-export default transition(SkillsSection);
+export default SkillsSection;

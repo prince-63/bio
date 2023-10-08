@@ -5,7 +5,6 @@ import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import Reavel from '@/hooks/Reavel';
-import transition from "@/hooks/transition";
 import ScrollAnimation from '@/hooks/scrollAnimation';
 
 const HeroSection = () => {
@@ -86,4 +85,4 @@ const HeroSection = () => {
   );
 };
 
-export default transition(HeroSection);
+export default HeroSection;
