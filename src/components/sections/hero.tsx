@@ -19,10 +19,10 @@ const HeroSection = () => {
                 <Image
                   src={PrinceProfile}
                   alt="Headshot of Sagar"
-                  className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
+                  className="absolute z-10 h-[280px] w-[240px] border-8 border-gray rounded-sm max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
                   style={{ objectFit: 'cover' }}
                 ></Image>
-                <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]"></div>
+                <div className="absolute h-[280px] w-[280px] border-8 border-transparent rounded-sm bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]"></div>
               </div>
             </Reavel>
           </ScrollAnimation>
@@ -40,8 +40,8 @@ const HeroSection = () => {
               </Reavel>
               <Reavel>
                 <Typography className='mt-3'>
-                  I&apos;m a Frontend developer (React.js) with a focus
-                  on creating a resposive and good looking websites, also i passionate about coding and contibuting in openSource projects.
+                  I&apos;m a Full-Stack developer (Next js & Node js) with a focus
+                  on creating a user friendly websites, also i passionate about website design and OpenSource project contribution.
                 </Typography>
               </Reavel>
             </ScrollAnimation>

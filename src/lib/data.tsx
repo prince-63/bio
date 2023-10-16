@@ -1,4 +1,4 @@
-import {Github, Linkedin, Instagram, Facebook} from 'lucide-react';
+import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 import LogoHTML from '../../public/images/logos/icon-html.svg';
 import LogoCSS from '../../public/images/logos/icon-css3.svg';
 import LogoSass from '../../public/images/logos/icon-sass.svg';
@@ -32,19 +32,14 @@ import TodoAppImage from '../../public/images/todoapp.png';
 import MicrosoftLearnStudentAmbassador from '../../public/images/microsoft-learn-student-ambassador.png'
 
 import {
-  ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
   GITHUB: 'https://github.com/prince-63',
   GITHUB_REPO: 'https://github.com/prince-63',
   Linkedin: 'https://linkedin.com/in/princekumar62',
-  FIGMA: 'https://www.figma.com/@shahsagarm',
-  FIGMA_FILE:
-    'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
 };
 
 export const NAV_LINKS = [
@@ -59,10 +54,6 @@ export const NAV_LINKS = [
   {
     label: 'Skills',
     href: '#skills',
-  },
-  {
-    label: 'Volunteer',
-    href:'#testimonials'
   },
   {
     label: 'Project',
@@ -85,11 +76,11 @@ export const SOCIAL_LINKS = [
   },
   {
     icon: Instagram,
-    url: 'https://instagram.com/princedncg',
+    url: 'https://instagram.com/ecnirpku',
   },
   {
     icon: Facebook,
-    url: 'https://www.facebook.com/princedncg',
+    url: 'https://www.facebook.com/ecnirpku',
   }
 ];
 
@@ -202,44 +193,6 @@ export const TECHNOLOGIES: TechDetails[] = [
   },
 ];
 
-export const EXPERIENCES: ExperienceDetails[] = [
-  {
-    logo: ProjectApnaBazar,
-    logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
-    currentlyWorkHere: true,
-    summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
-    ],
-  },
-  {
-    logo: ProjectApnaBazar,
-    darkModeLogo: ProjectApnaBazar,
-    logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
-    summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
-    ],
-  },
-  {
-    logo: ProjectApnaBazar,
-    darkModeLogo: ProjectApnaBazar,
-    logoAlt: 'Dotnpixel logo',
-    position: 'Full Stack Developer',
-    startDate: new Date(2015, 11),
-    endDate: new Date(2017, 4),
-    summary: ['Worked as a full stack developer (React / Laravel).'],
-  },
-];
-
 export const PROJECTS: ProjectDetails[] = [
   {
     name: 'Portfolio',
@@ -252,17 +205,14 @@ export const PROJECTS: ProjectDetails[] = [
       'CSS',
       'JavaScript',
       'Typescript',
-      'React',
-      'Bootstrap',
       'TailwindCSS',
-      'React Js',
       'Next Js',
     ],
   },
   {
     name: 'Todo App',
     description:
-    "A Todo app built with Flutter and Dart is a versatile and user-friendly task management tool. Leveraging the Flutter framework's flexibility and Dart's efficiency, this app offers a smooth and consistent experience across different platforms, including Android, iOS, and web browsers. It allows users to create, organize, and manage tasks with ease. The app's intuitive interface and simple design make it easy to use and navigate.",
+      "A Todo app built with Flutter and Dart is a versatile and user-friendly task management tool. Leveraging the Flutter framework's flexibility and Dart's efficiency, this app offers a smooth and consistent experience across different platforms, including Android, iOS, and web browsers. It allows users to create, organize, and manage tasks with ease. The app's intuitive interface and simple design make it easy to use and navigate.",
     url: 'https://git@github.com/prince-63/todo_app',
     previewImage: TodoAppImage,
     technologies: [
@@ -274,13 +224,12 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'ApnaBazar',
     description:
-    'A food website landing page is like the front door to a world of delicious food. It uses tempting pictures and tasty descriptions to draw people in and makes it easy to find their way around the site. It s a sneak peek of the yummy things you can find on the website. This page has colorful pictures of tasty dishes and catchy headlines that make you hungry and curious. It might have quick links to menus, reservations, or special deals to make things easy for you. A well-made food website landing page makes you want to explore and try the food. Its a crucial part of a successful food website.',
-    url: 'https://apnabazarapp.netlify.app/',
+      'A food website landing page is like the front door to a world of delicious food. It uses tempting pictures and tasty descriptions to draw people in and makes it easy to find their way around the site. It s a sneak peek of the yummy things you can find on the website. This page has colorful pictures of tasty dishes and catchy headlines that make you hungry and curious. It might have quick links to menus, reservations, or special deals to make things easy for you. A well-made food website landing page makes you want to explore and try the food. Its a crucial part of a successful food website.',
+    url: 'https://github.com/prince-63/Apna-bazar',
     previewImage: ProjectApnaBazar,
     technologies: [
       'HTML',
       'CSS',
-      'Bootstrap',
       'JavaScript',
       'Figma',
     ],
@@ -289,7 +238,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: 'ShopMe',
     description:
       '"ShopMe" is a digital product website that brings the world of online shopping to your fingertips. Our landing page is your gateway to a diverse range of products, all at your convenience. Explore our website to discover the latest offerings and start shopping with ease.',
-    url: 'https://aquamarine-cendol-1a056d.netlify.app/',
+    url: 'https://github.com/prince-63/e-commerce',
     previewImage: ShopMeImage,
     technologies: [
       'HTML',
@@ -302,7 +251,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: 'UsabilityHub',
     description:
       'Creating a clone of the UsabilityHub website landing page is a fascinating project that involves replicating the user-friendly design and functionality of this well-established usability testing platform. This project presents an excellent opportunity to gain hands-on experience in web development and design. By dissecting the UsabilityHub landing page and reconstructing it, i can hone my skills in HTML, CSS, and JavaScript while also gaining insight into user experience principles.',
-    url: 'https://us-ability-hub.netlify.app/',
+    url: 'https://github.com/prince-63/UsabilityHub-website-clone',
     previewImage: UsabilityHubImage,
     technologies: [
       'HTML',
@@ -316,7 +265,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: 'Wealth Properties',
     description:
       'A Wealth Properties website landing page clone project involves replicating the design and functionality of a real estate investment website, specifically focusing on the landing page. This ambitious endeavor allows my to create a digital space that mirrors the features, aesthetics, and user experience of a successful property investment platform. By undertaking this project, i can gain valuable insights and experience in web development, design, and content creation. It provides an opportunity to sharpen my skills in HTML, CSS, JavaScript.',
-    url: 'https://wealth-properties.netlify.app/',
+    url: 'https://github.com/prince-63/Wealth-Properties',
     previewImage: ProjectWealthProperties,
     technologies: [
       'HTML',
@@ -326,15 +275,4 @@ export const PROJECTS: ProjectDetails[] = [
       'Bootstrap',
     ],
   },
-];
-
-export const TESTIMONIALS: TestimonialDetails[] = [
-  {
-    organizationName: "Microsoft Learn Student Ambassador",
-    organizationLogo: MicrosoftLearnStudentAmbassador,
-    about: 'Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.',
-    startingDate: 'Aug-2023',
-    endingDate: 'Present',
-    link: "https://mvp.microsoft.com/studentambassadors/certificate/6d07cc2b-1fb9-4f27-97b7-2bfe6a6c0f41"
-  }
 ];
