@@ -57,12 +57,9 @@ const AboutMeSection = () => {
                                 >
                                     developer.
                                 </Link>{" "}
-                                who focuses on full-stack development, particularly
-                                using (React.js & Node.js). I&apos;m excited about
-                                making digital products look great and work
-                                smoothly. I care about user experience, making
-                                designs look perfect, and writing code that&apos;s
-                                easy to read and runs really well
+                                who focuses on backend development, particularly
+                                using (Spring Boot). 
+                                I&apos;m passionate about creating visually appealing and seamlessly functioning digital products. I prioritize user experience, perfect designs, and writing clean, efficient code.
                             </Typography>
                         </Reavel>
                     </ScrollAnimation>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { MapPin, Scroll } from 'lucide-react';
-import PrinceProfile from '../../../public/images/prince_profile.jpg'
+import PrinceProfile from '../../../public/images/prince_kumar.jpg'
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
@@ -40,8 +40,7 @@ const HeroSection = () => {
               </Reavel>
               <Reavel>
                 <Typography className='mt-3'>
-                  I&apos;m a Frontend developer (React.js) with a focus
-                  on creating a resposive and good looking websites, also i passionate about coding and contibuting in openSource projects.
+                I specialize in backend development, proficient in technologies such as Spring Boot. My expertise includes designing and implementing robust server-side solutions, handling data storage, and ensuring the seamless functionality of web applications.
                 </Typography>
               </Reavel>
             </ScrollAnimation>

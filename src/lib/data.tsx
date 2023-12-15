@@ -32,9 +32,9 @@ import {
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
-  GITHUB: 'https://github.com/prince-63',
-  GITHUB_REPO: 'https://github.com/prince-63/princekumar',
-  Linkedin: 'https://linkedin.com/in/princekumar62',
+  GITHUB: 'https://github.com/',
+  GITHUB_REPO: 'https://github.com/',
+  Linkedin: 'https://linkedin.com/',
   FIGMA: '',
   FIGMA_FILE:
     '',
@@ -191,15 +191,11 @@ export const PROJECTS: ProjectDetails[] = [
     name: 'Portfolio',
     description:
       'A developer portfolio website is a powerful tool to showcase your skills, accomplishments, and personality to the world. As my personal digital space, it reflects my unique identity as a developer. This website should not only display my technical expertise but also tell my story. i am using this website to exhibit my projects, provide insights into my development journey, and offer a glimpse into my passion for coding. By crafting an engaging and informative portfolio, i can make a strong impression on potential employers, clients, and collaborators. my portfolio website is my opportunity to shine and leave a lasting impact in the competitive world of tech.',
-    url: '#',
+    url: '/',
     previewImage: PortfolioImage,
     technologies: [
       'HTML',
-      'CSS',
-      'JavaScript',
       'Typescript',
-      'React',
-      'Bootstrap',
       'TailwindCSS',
       'React Js',
       'Next Js',
