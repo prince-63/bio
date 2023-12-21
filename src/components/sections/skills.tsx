@@ -18,7 +18,7 @@ const SkillsSection = () => {
         <ScrollAnimation>
           <Reavel>
             <Typography variant="subtitle" className="max-w-xl text-center">
-            I've explored various tools and technologies throughout my journey
+            I&apos;ve explored various tools and technologies throughout my journey
             </Typography>
           </Reavel>
         </ScrollAnimation>
