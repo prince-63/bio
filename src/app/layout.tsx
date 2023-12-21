@@ -1,16 +1,16 @@
-import { Inter } from 'next/font/google';
+
 import { Metadata } from 'next';
+import { Space_Grotesk } from 'next/font/google';
 
 import './globals.css';
 import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
-
-const inter = Inter({ subsets: ["latin-ext"] });
+import InterFont from '@/components/general/InterFont';
 
 const title = 'Prince Kumar';
 const description =
-  'A self-proclaimed developer who specializes in frontend development (React.js), from kolkata, India.';
+  'A self-proclaimed developer who specializes in Backend Development (Spring Boot), from kolkata, India.';
 const url = 'https://github.com/prince-63';
 
 export const metadata: Metadata = {
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    'Frontend Developer',
-    'React Developer',
+    'Backend Developer',
+    'Backend Development',
   ],
   creator: 'Prince Kumar',
   themeColor: [
@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-gray text-gray-600 antialiased scroll-smooth`}>
+      <body className={`${InterFont.className} bg-gray text-gray-600 antialiased scroll-smooth`}>
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>

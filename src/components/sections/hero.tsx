@@ -6,10 +6,11 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import Reavel from '@/hooks/Reavel';
 import ScrollAnimation from '@/hooks/scrollAnimation';
+import spaceGrotesk from '../general/space-grotesk-font';
 
 const HeroSection = () => {
   return (
-    <Container id="hero">
+    <Container id="home">
       <div className="flex md:mt-16 md:pt-3 flex-col gap-12 md:flex-row">
         {/* Image */}
         <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
@@ -31,53 +32,48 @@ const HeroSection = () => {
         {/* Content */}
         <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
-            <ScrollAnimation>
-              <Reavel>
-                <Typography variant="h1">
-                  Hi, I&apos;m Prince{' '}
-                  <span className="inline-block animate-waving-hand">👋</span>
-                </Typography>
-              </Reavel>
-              <Reavel>
-                <Typography className='mt-3'>
+
+            <Reavel>
+              <Typography variant="h1">
+                Hi, I&apos;m Prince{' '}
+                <span className="inline-block animate-waving-hand">👋</span>
+              </Typography>
+            </Reavel>
+            <Reavel>
+              <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
                 I specialize in backend development, proficient in technologies such as Spring Boot. My expertise includes designing and implementing robust server-side solutions, handling data storage, and ensuring the seamless functionality of web applications.
-                </Typography>
-              </Reavel>
-            </ScrollAnimation>
+              </Typography>
+            </Reavel>
+
           </div>
           <div className="flex flex-col gap-2">
-            <ScrollAnimation>
-              <Reavel>
-                <div className="flex gap-2">
-                  <MapPin className="stroke-gray-600" />
-                  <Typography>Kolkata, India</Typography>
-                </div>
-              </Reavel>
-            </ScrollAnimation>
+
+            <Reavel>
+              <div className="flex gap-2">
+                <MapPin className="stroke-gray-600" />
+                <Typography className={`${spaceGrotesk.className} text-lg `}>Kolkata, India</Typography>
+              </div>
+            </Reavel>
+
 
             <div className="flex items-center gap-2">
-              <ScrollAnimation>
-                <Reavel>
-                  <div className="flex h-6 w-6 items-center justify-center">
-                    <span className="relative flex h-3 w-3">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                      <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
-                    </span>
-                  </div>
-                </Reavel>
-              </ScrollAnimation>
-              <ScrollAnimation>
-                <Reavel>
-                  <Typography>Available for new projects</Typography>
-                </Reavel>
-              </ScrollAnimation>
+
+              <Reavel>
+                <div className="flex h-6 w-6 items-center justify-center">
+                  <span className="relative flex h-3 w-3">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
+                  </span>
+                </div>
+              </Reavel>
+              <Reavel>
+                <Typography className={`${spaceGrotesk.className} text-lg`}>Available for new projects</Typography>
+              </Reavel>
             </div>
           </div>
-          <ScrollAnimation>
-            <Reavel>
-              <SocialIcons />
-            </Reavel>
-          </ScrollAnimation>
+          <Reavel>
+            <SocialIcons />
+          </Reavel>
         </div>
       </div>
     </Container>

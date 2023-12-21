@@ -5,6 +5,7 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import Reavel from '@/hooks/Reavel';
 import ScrollAnimation from '@/hooks/scrollAnimation';
+import spaceGrotesk from '../general/space-grotesk-font';
 
 const SkillsSection = () => {
   return (
@@ -12,19 +13,20 @@ const SkillsSection = () => {
       <div className="flex flex-col items-center gap-4">
         <ScrollAnimation>
           <div className="self-center">
-            <Tag label="Skills" />
+            <Tag className={`${spaceGrotesk.className} text-lg`} label="Core Skills" />
           </div>
         </ScrollAnimation>
-        <ScrollAnimation>
+        {/* <ScrollAnimation>
           <Reavel>
             <Typography variant="subtitle" className="max-w-xl text-center">
             I&apos;ve explored various tools and technologies throughout my journey
             </Typography>
           </Reavel>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </div>
 
-      <div className="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
+      {/* grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12 */}
+      <div className="flex gap-6 flex-wrap justify-center">
         {TECHNOLOGIES.map((technology, index) => (
           <TechDetails {...technology} key={index} />
         ))}
