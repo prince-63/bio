@@ -4,7 +4,7 @@ import { TechDetails } from '@/lib/types';
 import Typography from '@/components/general/typography';
 import spaceGrotesk from '../general/space-grotesk-font';
 
-const TechDetails = ({ url, logo, darkModeLogo, label }: TechDetails) => {
+const TechDetails = ({ label }: TechDetails) => {
   return (
     <div className="flex flex-col items-center gap-2">
       
