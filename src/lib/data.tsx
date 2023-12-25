@@ -30,16 +30,11 @@ import {
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
-
   GITHUB: 'https://github.com/prince-63',
   GITHUB_REPO: 'https://github.com/prince-63',
   Linkedin: 'https://linkedin.com/in/princekumar62',
-  GITHUB: 'https://github.com/',
-  GITHUB_REPO: 'https://github.com/',
-  Linkedin: 'https://linkedin.com/',
   FIGMA: '',
-  FIGMA_FILE:
-    '',
+  FIGMA_FILE: '',
 };
 
 export const NAV_LINKS = [
@@ -74,15 +69,6 @@ export const SOCIAL_LINKS = [
     icon: Linkedin,
     url: 'https://linkedin.com/in/princekumar62',
   },
-  {
-    icon: Instagram,
-    url: 'https://instagram.com/ecnirpku',
-  },
-  {
-    icon: Facebook,
-    url: 'https://www.facebook.com/ecnirpku',
-
-  }
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
