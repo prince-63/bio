@@ -7,30 +7,10 @@ export type TechDetails = {
   url: string;
 };
 
-export type ExperienceDetails = {
-  logo?: string | StaticImageData;
-  darkModeLogo?: string | StaticImageData;
-  logoAlt?: string;
-  position?: string;
-  currentlyWorkHere?: boolean;
-  startDate?: Date;
-  endDate?: Date;
-  summary: string[];
-};
-
 export type ProjectDetails = {
   name: string;
   description: string;
   url: string;
   previewImage: string | StaticImageData;
   technologies: string[];
-};
-
-export type TestimonialDetails = {
-  organizationName?: string;
-  organizationLogo?: string | StaticImageData;
-  about?: string;
-  startingDate?: string;
-  endingDate?: string;
-  link?: string;
 };
