@@ -1,11 +1,9 @@
 import { TECHNOLOGIES } from '@/lib/data';
 import Tag from '@/components/data-display/tag';
-import TechDetails from '@/components/data-display/tech-details';
-import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
-import Reavel from '@/hooks/Reavel';
 import ScrollAnimation from '@/hooks/scrollAnimation';
 import spaceGrotesk from '../general/space-grotesk-font';
+import TechDetails from '../data-display/tech-details';
 
 const SkillsSection = () => {
   return (

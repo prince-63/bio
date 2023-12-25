@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
 
 import './globals.css';
 import Header from '@/components/layout/header';

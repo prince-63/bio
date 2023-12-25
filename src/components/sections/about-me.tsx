@@ -6,8 +6,6 @@ import Typography from "@/components/general/typography";
 import Link from "@/components/navigation/link";
 import { EXTERNAL_LINKS } from "@/lib/data";
 import Reavel from "@/hooks/Reavel";
-import { Scroll } from "lucide-react";
-import ScrollAnimation from "@/hooks/scrollAnimation";
 import spaceGrotesk from "../general/space-grotesk-font";
 
 const AboutMeSection = () => {

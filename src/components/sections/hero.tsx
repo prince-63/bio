@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { MapPin, Scroll } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import PrinceProfile from '../../../public/images/prince_kumar.jpg'
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';

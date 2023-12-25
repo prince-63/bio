@@ -1,7 +1,7 @@
 "use client";
+
 import { useState } from "react";
 import { Copy, Mail, Phone } from "lucide-react";
-// import Link from 'next/link';
 
 import SocialIcons from "@/components/data-display/social-icons";
 import Tag from "@/components/data-display/tag";
@@ -70,7 +70,12 @@ const ContactSection = () => {
                         <div className="flex items-center gap-4 md:gap-5">
                             <Mail className="h-6 w-6 md:h-8 md:w-8" />
                             {/* <Link href={`mailto:${email}`}> */}
-                            <Typography variant="h2">{email}</Typography>
+                            <Typography
+                                className=" font-medium text-opacity-70"
+                                variant="h4"
+                            >
+                                {email}
+                            </Typography>
                             {/* </Link> */}
                             <IconButton
                                 size={width && width < 768 ? "md" : "lg"}
@@ -89,7 +94,12 @@ const ContactSection = () => {
                         <div className="flex items-center gap-4 md:gap-5">
                             <Phone className="h-6 w-6 md:h-8 md:w-8" />
                             {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
-                            <Typography variant="h2">{phone}</Typography>
+                            <Typography
+                                className=" font-medium text-opacity-70"
+                                variant="h4"
+                            >
+                                {phone}
+                            </Typography>
                             {/* </Link> */}
                             <IconButton
                                 size={width && width < 768 ? "md" : "lg"}
@@ -112,7 +122,9 @@ const ContactSection = () => {
 
                 <div className="flex flex-col items-center gap-2">
                     <Reavel>
-                        <Typography className={`${spaceGrotesk.className} pb-4 text-lg text-center`}>
+                        <Typography
+                            className={`${spaceGrotesk.className} pb-4 text-center text-lg`}
+                        >
                             You may also find me on these platforms!
                         </Typography>
                     </Reavel>
