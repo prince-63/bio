@@ -1,4 +1,4 @@
-import {Github, Linkedin, Instagram, Facebook} from 'lucide-react';
+import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 import LogoHTML from '../../public/images/logos/icon-html.svg';
 import LogoCSS from '../../public/images/logos/icon-css3.svg';
 import LogoSass from '../../public/images/logos/icon-sass.svg';
@@ -25,13 +25,15 @@ import LogoFlutter from '../../public/images/logos/icon-flutter.svg';
 import PortfolioImage from '../../public/images/portfolio_image.png';
 
 import {
-  ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
+
+  GITHUB: 'https://github.com/prince-63',
+  GITHUB_REPO: 'https://github.com/prince-63',
+  Linkedin: 'https://linkedin.com/in/princekumar62',
   GITHUB: 'https://github.com/',
   GITHUB_REPO: 'https://github.com/',
   Linkedin: 'https://linkedin.com/',
@@ -71,6 +73,15 @@ export const SOCIAL_LINKS = [
   {
     icon: Linkedin,
     url: 'https://linkedin.com/in/princekumar62',
+  },
+  {
+    icon: Instagram,
+    url: 'https://instagram.com/ecnirpku',
+  },
+  {
+    icon: Facebook,
+    url: 'https://www.facebook.com/ecnirpku',
+
   }
 ];
 
@@ -197,11 +208,79 @@ export const PROJECTS: ProjectDetails[] = [
       'HTML',
       'Typescript',
       'TailwindCSS',
-      'React Js',
       'Next Js',
     ],
+  },
+  {
+    name: 'Todo App',
+    description:
+      "A Todo app built with Flutter and Dart is a versatile and user-friendly task management tool. Leveraging the Flutter framework's flexibility and Dart's efficiency, this app offers a smooth and consistent experience across different platforms, including Android, iOS, and web browsers. It allows users to create, organize, and manage tasks with ease. The app's intuitive interface and simple design make it easy to use and navigate.",
+    url: 'https://git@github.com/prince-63/todo_app',
+    previewImage: TodoAppImage,
+    technologies: [
+      'Android Studio',
+      'Dart',
+      'Flutter',
+    ],
+  },
+  {
+    name: 'ApnaBazar',
+    description:
+      'A food website landing page is like the front door to a world of delicious food. It uses tempting pictures and tasty descriptions to draw people in and makes it easy to find their way around the site. It s a sneak peek of the yummy things you can find on the website. This page has colorful pictures of tasty dishes and catchy headlines that make you hungry and curious. It might have quick links to menus, reservations, or special deals to make things easy for you. A well-made food website landing page makes you want to explore and try the food. Its a crucial part of a successful food website.',
+    url: 'https://github.com/prince-63/Apna-bazar',
+    previewImage: ProjectApnaBazar,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Figma',
+    ],
+  },
+  {
+    name: 'ShopMe',
+    description:
+      '"ShopMe" is a digital product website that brings the world of online shopping to your fingertips. Our landing page is your gateway to a diverse range of products, all at your convenience. Explore our website to discover the latest offerings and start shopping with ease.',
+    url: 'https://github.com/prince-63/e-commerce',
+    previewImage: ShopMeImage,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Figma',
+    ],
+  },
+  {
+    name: 'UsabilityHub',
+    description:
+      'Creating a clone of the UsabilityHub website landing page is a fascinating project that involves replicating the user-friendly design and functionality of this well-established usability testing platform. This project presents an excellent opportunity to gain hands-on experience in web development and design. By dissecting the UsabilityHub landing page and reconstructing it, i can hone my skills in HTML, CSS, and JavaScript while also gaining insight into user experience principles.',
+    url: 'https://github.com/prince-63/UsabilityHub-website-clone',
+    previewImage: UsabilityHubImage,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Bootstrap',
+    ],
+  },
+  {
+    name: 'Wealth Properties',
+    description:
+      'A Wealth Properties website landing page clone project involves replicating the design and functionality of a real estate investment website, specifically focusing on the landing page. This ambitious endeavor allows my to create a digital space that mirrors the features, aesthetics, and user experience of a successful property investment platform. By undertaking this project, i can gain valuable insights and experience in web development, design, and content creation. It provides an opportunity to sharpen my skills in HTML, CSS, JavaScript.',
+    url: 'https://github.com/prince-63/Wealth-Properties',
+    previewImage: ProjectWealthProperties,
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Bootstrap',
+    ],
+  },
+];
   }
 ];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
 ];
+

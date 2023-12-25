@@ -6,7 +6,7 @@ import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
 
-const inter = Inter({ subsets: ["latin-ext"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const title = 'Prince Kumar';
 const description =
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: '../public/favicon.ico',
+    shortcut: '../public/favicon-16x16.png',
+    apple: '../public/apple-touch-icon.png',
   },
 };
 

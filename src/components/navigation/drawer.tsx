@@ -13,8 +13,8 @@ const DrawerClose = DrawerPrimitive.Close;
 const DrawerPortal = ({
   className,
   ...props
-}: DrawerPrimitive.DialogPortalProps) => (
-  <DrawerPrimitive.Portal className={mergeClasses(className)} {...props} />
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <DrawerPrimitive.Portal {...props} />
 );
 DrawerPortal.displayName = DrawerPrimitive.Portal.displayName;
 
@@ -50,7 +50,7 @@ const drawerVariants = cva(
 
 interface DrawerContentProps
   extends React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>,
-    VariantProps<typeof drawerVariants> {}
+  VariantProps<typeof drawerVariants> { }
 
 const DrawerContent = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Content>,
