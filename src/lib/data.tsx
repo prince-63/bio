@@ -278,8 +278,6 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
 ];
-  }
-];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
 ];
