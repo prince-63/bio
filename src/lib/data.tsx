@@ -24,6 +24,10 @@ export const NAV_LINKS = [
         label: "Contact",
         href: "#contact",
     },
+    {
+        label: "Blog",
+        href: "/blog"
+    }
 ];
 
 export const SOCIAL_LINKS = [

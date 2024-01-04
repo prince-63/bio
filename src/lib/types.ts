@@ -1,3 +1,10 @@
 export type TechDetails = {
-  label: string;
+    label: string;
 };
+
+export interface PostMetadata {
+    title: string;
+    date: string;
+    subtitle: string;
+    content: string;
+}
