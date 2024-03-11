@@ -19,7 +19,7 @@ const HeroSection = () => {
               <div className="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
                 <Image
                   src={PrinceProfile}
-                  alt="Headshot of Sagar"
+                  alt="Headshot of Prince"
                   className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
                   style={{ objectFit: 'cover' }}
                 ></Image>

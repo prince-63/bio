@@ -1,5 +1,6 @@
 import { Github, Linkedin } from "lucide-react";
-import { TechDetails } from "@/lib/types";
+import { ProjectMetadata, TechDetails } from "@/lib/types";
+import NotFound from "../../public/images/Project/Not Found.png";
 
 export const EXTERNAL_LINKS = {
     GITHUB: "https://github.com/prince-63",
@@ -17,6 +18,10 @@ export const NAV_LINKS = [
         href: "#about",
     },
     {
+        label: "Blog",
+        href: "/blog"
+    },
+    {
         label: "Skills",
         href: "#skills",
     },
@@ -24,10 +29,6 @@ export const NAV_LINKS = [
         label: "Contact",
         href: "#contact",
     }
-    // {
-    //     label: "Blog",
-    //     href: "/blog"
-    // }
 ];
 
 export const SOCIAL_LINKS = [
@@ -60,4 +61,47 @@ export const TECHNOLOGIES: TechDetails[] = [
     {
         label: "Algorithm"
     }
+];
+
+export const PROJECTS: ProjectMetadata[] = [
+    {
+        imageSrc: NotFound,
+        title: "Your School Management System",
+        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
+        tags: ["Java", "Spring Boot", "Spring Mvc"],
+        year: "2021",
+        url: "https://github.com/prince-63",
+    },
+    {
+        imageSrc: NotFound,
+        title: "Your School Management System",
+        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
+        tags: ["Java", "Spring Boot", "Spring Mvc"],
+        year: "2021",
+        url: "https://github.com/prince-63",
+    },
+    {
+        imageSrc: NotFound,
+        title: "Your School Management System",
+        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
+        tags: ["Java", "Spring Boot", "Spring Mvc"],
+        year: "2021",
+        url: "https://github.com/prince-63",
+    },
+    {
+        imageSrc: NotFound,
+        title: "Your School Management System",
+        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
+        tags: ["Java", "Spring Boot", "Spring Mvc"],
+        year: "2021",
+        url: "https://github.com/prince-63",
+    },
+    {
+        imageSrc: NotFound,
+        title: "Your School Management System",
+        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
+        tags: ["Java", "Spring Boot", "Spring Mvc"],
+        year: "2021",
+        url: "https://github.com/prince-63",
+    },
 ];

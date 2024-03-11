@@ -9,7 +9,7 @@ import InterFont from '@/components/general/InterFont';
 const title = 'Prince Kumar';
 const description =
   'A self-proclaimed developer who specializes in Backend Development (Spring Boot), from kolkata, India.';
-const url = 'https://github.com/prince-63';
+const url = 'https://princekumar.xyz/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),

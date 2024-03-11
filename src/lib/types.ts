@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type TechDetails = {
     label: string;
 };
@@ -7,4 +9,13 @@ export interface PostMetadata {
     date: string;
     subtitle: string;
     content: string;
+}
+
+export interface ProjectMetadata {
+    imageSrc: StaticImageData;
+    title: string;
+    description: string;
+    tags: string[];
+    year: string;
+    url: string;
 }
