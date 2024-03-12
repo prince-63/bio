@@ -1,11 +1,7 @@
 import React from "react";
 
-import { Github, Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
 import { PROJECTS } from '@/lib/data';
-import Typography from "../general/typography";
-import spaceGrotesk from "../general/space-grotesk-font";
-import IconButton from "../general/icon-button";
-import Tag from "./tag";
 import Image from "next/image";
 
 export default function ProjectDetails() {
@@ -24,12 +20,13 @@ export default function ProjectDetails() {
                                     </a>
                                 </div>
                                 <h5 className="mb-4 text-start text-lg font-bold">{project.title}</h5>
-                                <div className="mb-4 flex text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
-                                    <a onClick={() => window.open(project.url, '_blank')} className="flex gap-1 items-center">
+                                <div className="mb-2 flex text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
+                                    <a onClick={() => window.open(project.url, '_blank')} className="flex gap-1 cursor-pointer">
                                         <Github onClick={() => window.open(project.url, '_blank')} size={16} />
                                         Github
                                     </a>
                                 </div>
+                                <p className="text-start mb-2 text-neutral-500 dark:text-neutral-300">{project.year}</p>
                                 <p className="text-start mb-4 text-neutral-500 dark:text-neutral-300">
                                     {project.description}
                                 </p>

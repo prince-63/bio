@@ -11,20 +11,18 @@ import ProjectDetails from '../data-display/project-details';
 export default function ProjectSection() {
 
     return (
-        <Container id='skills'>
+        <Container id='project'>
             <div className="flex flex-col items-center gap-4">
                 <ScrollAnimation>
                     <div className="self-center">
                         <Tag className={`${spaceGrotesk.className} text-lg`} label="Featured Projects" />
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation>
-                    <Reavel>
-                        <Typography variant="subtitle" className="max-w-lg text-center">
-                            Here are some of the selected projects that showcase my passion for backend development.
-                        </Typography>
-                    </Reavel>
-                </ScrollAnimation>
+
+                <Typography variant="subtitle" className="max-w-lg text-center">
+                    Here are some of the selected projects that showcase my passion for backend development.
+                </Typography>
+
             </div>
 
             <div>

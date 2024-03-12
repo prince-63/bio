@@ -41,7 +41,7 @@ const AboutMeSection = () => {
 
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            I&apos;m a passionate{" "}
+                            I&apos;m a Aspiring{" "}
                             <Link
                                 noCustomization
                                 externalLink
@@ -61,7 +61,7 @@ const AboutMeSection = () => {
 
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            I began my journey as a web developer in 2022, and
+                            I began my journey as a web development in 2022, and
                             since then, I&apos;ve continued to grow and evolve
                             as a developer, taking on new challenges and
                             learning the latest technologies along the way.
@@ -99,7 +99,7 @@ const AboutMeSection = () => {
                         <ul className="flex list-inside list-disc flex-col gap-2">
                             <Reavel>
                                 <Typography component="li" className={`${spaceGrotesk.className} text-lg`}>
-                                    B. Tech in Computer science and engineering
+                                    Pursuing B.Tech CSE
                                 </Typography>
                             </Reavel>
                         </ul>

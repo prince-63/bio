@@ -41,7 +41,7 @@ const HeroSection = () => {
             </Reavel>
             <Reavel>
               <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
-                I specialize in backend development, proficient in technologies such as Spring Boot. My expertise includes designing and implementing robust server-side solutions, handling data storage, and ensuring the seamless functionality of web applications.
+                Aspiring Backend Developer, focusing Spring Boot, Microservices, Rest API, Docker, Kubernetes, and AWS. My expertise includes designing, implementing, structuring code and developing scalable, high-performance applications. I always looking for new technologies and frameworks to learn and inhance my skills.
               </Typography>
             </Reavel>
 

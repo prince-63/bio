@@ -1,6 +1,8 @@
 import { Github, Linkedin } from "lucide-react";
 import { ProjectMetadata, TechDetails } from "@/lib/types";
-import NotFound from "../../public/images/Project/Not Found.png";
+import RestAPI from "../../public/images/Project/Rest API.png";
+import SpringMVC from "../../public/images/Project/Spring MVC.png";
+import Microservices from "../../public/images/Project/Microservices.png";
 
 export const EXTERNAL_LINKS = {
     GITHUB: "https://github.com/prince-63",
@@ -18,12 +20,12 @@ export const NAV_LINKS = [
         href: "#about",
     },
     {
-        label: "Blog",
-        href: "/blog"
-    },
-    {
         label: "Skills",
         href: "#skills",
+    },
+    {
+        label: "Projects",
+        href: "#project",
     },
     {
         label: "Contact",
@@ -44,10 +46,70 @@ export const SOCIAL_LINKS = [
 
 export const TECHNOLOGIES: TechDetails[] = [
     {
+        label: "HTML"
+    },
+    {
+        label: "CSS"
+    },
+    {
+        label: "Tailwind CSS"
+    },
+    {
+        label: "JavaScript"
+    },
+    {
+        label: "React"
+    },
+    {
+        label: "Next.js"
+    },
+    {
+        label: "Node.js"
+    },
+    {
+        label: "Express.js"
+    },
+    {
+        label: "MongoDB"
+    },
+    {
+        label: "MySQL"
+    },
+    {
+        label: "Postman"
+    },
+    {
+        label: "Rest API"
+    },
+    {
+        label: "C Language"
+    },
+    {
         label: "Java",
     },
     {
+        label: "Algorithm"
+    },
+    {
+        label: "Data Structure"
+    },
+    {
+        label: "Spring Framework"
+    },
+    {
         label: "Spring Boot",
+    },
+    {
+        label: "Spring MVC"
+    },
+    {
+        label: "Theamleaf"
+    },
+    {
+        label: "JPA"
+    },
+    {
+        label: "Hibernate"
     },
     {
         label: "Git",
@@ -55,53 +117,23 @@ export const TECHNOLOGIES: TechDetails[] = [
     {
         label: "GitHub",
     },
-    {
-        label: "Data Structure"
-    },
-    {
-        label: "Algorithm"
-    }
 ];
 
 export const PROJECTS: ProjectMetadata[] = [
     {
-        imageSrc: NotFound,
+        imageSrc: SpringMVC,
         title: "Your School Management System",
-        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
-        tags: ["Java", "Spring Boot", "Spring Mvc"],
-        year: "2021",
-        url: "https://github.com/prince-63",
+        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school student data like student information, courses details, classes and enrollment details.",
+        tags: ["Java", "Spring Boot", "Spring Mvc", "Thymeleaf", "Hibernate", "MySQL", "Rest API", "HTML", "CSS", "Bootstrap", "Postman", "Git", "GitHub"],
+        year: "2024",
+        url: "https://github.com/prince-63/your-school",
     },
     {
-        imageSrc: NotFound,
-        title: "Your School Management System",
-        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
-        tags: ["Java", "Spring Boot", "Spring Mvc"],
-        year: "2021",
-        url: "https://github.com/prince-63",
-    },
-    {
-        imageSrc: NotFound,
-        title: "Your School Management System",
-        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
-        tags: ["Java", "Spring Boot", "Spring Mvc"],
-        year: "2021",
-        url: "https://github.com/prince-63",
-    },
-    {
-        imageSrc: NotFound,
-        title: "Your School Management System",
-        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
-        tags: ["Java", "Spring Boot", "Spring Mvc"],
-        year: "2021",
-        url: "https://github.com/prince-63",
-    },
-    {
-        imageSrc: NotFound,
-        title: "Your School Management System",
-        description: "Your School Management is a simple child school management Spring MVC application. that provides User Interface and RESTful API endpoints for managing school contacts.",
-        tags: ["Java", "Spring Boot", "Spring Mvc"],
-        year: "2021",
-        url: "https://github.com/prince-63",
+        imageSrc: Microservices,
+        title: "Quiz Application System",
+        description: "Quiz Application System is a simple Microservice based application that provides two different services. One is the Quiz Service and the other is the Question Service. The Quiz Service provides RESTful API endpoints for managing quiz data like quiz information, questions, and answers. The Question Service provides RESTful API endpoints for managing question question creation, update, delete and get the result of the quiz. the quiz service call to the question service to generate question and answer and calculate the result of the quiz. The Eureka server is used for service discovery and registration. The Eureka client is used for service registration and discovery. The Feign client is used for service communication. The API Gateway is used for routing and load balancing.",
+        tags: ["Java", "Spring Boot", "Rest API", "MySQL", "Postman", "Eureka Client", "Eureka Server", "API Gateway", "Git", "GitHub"],
+        year: "2023",
+        url: "https://github.com/prince-63/quiz",
     },
 ];
