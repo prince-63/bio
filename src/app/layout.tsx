@@ -6,7 +6,7 @@ import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
 import InterFont from '@/components/general/InterFont';
 
-const title = 'Prince Kumar';
+const title = 'Prince Kumar Prasad';
 const description =
   'A self-proclaimed developer who specializes in Backend Development (Spring Boot), from kolkata, India.';
 const url = 'https://princekumar.xyz/';
@@ -18,6 +18,19 @@ export const metadata: Metadata = {
   keywords: [
     'Backend Developer',
     'Backend Development',
+    'Spring Boot',
+    'Microservices',
+    'Rest API',
+    'Docker',
+    'Kubernetes',
+    'fullstack developer',
+    'frontend developer',
+    'rest api developer',
+    'ui developer',
+    'ux developer',
+    'web developer',
+    'web designer',
+    'web development',
   ],
   creator: 'Prince Kumar',
   themeColor: [
