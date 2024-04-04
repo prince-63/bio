@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
-import PrinceProfile from '../../../public/images/prince_kumar.jpg'
+import PrinceProfile from '../../../public/images/profile.jpg';
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';

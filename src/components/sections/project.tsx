@@ -19,7 +19,7 @@ export default function ProjectSection() {
                     </div>
                 </ScrollAnimation>
 
-                <Typography variant="subtitle" className="max-w-lg text-center">
+                <Typography variant="subtitle" className={`${spaceGrotesk.className} max-w-lg text-center`} >
                     Here are some of the selected projects that showcase my passion for backend development.
                 </Typography>
 

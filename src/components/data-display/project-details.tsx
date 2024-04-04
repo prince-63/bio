@@ -3,6 +3,7 @@ import React from "react";
 import { Github } from "lucide-react";
 import { PROJECTS } from '@/lib/data';
 import Image from "next/image";
+import spaceGrotesk from "../general/space-grotesk-font";
 
 export default function ProjectDetails() {
     return (
@@ -27,13 +28,13 @@ export default function ProjectDetails() {
                                     </a>
                                 </div>
                                 <p className="text-start mb-2 text-neutral-500 dark:text-neutral-300">{project.year}</p>
-                                <p className="text-start mb-4 text-neutral-500 dark:text-neutral-300">
+                                <p className={`${spaceGrotesk.className} text-start mb-4 text-neutral-500 dark:text-neutral-300`}>
                                     {project.description}
                                 </p>
                                 <div className="mt-2 flex flex-row justify-between">
                                     <div className="flex flex-row flex-wrap gap-2 font-medium">
                                         {project.tags.map((tag, index) => (
-                                            <span key={index} className="flex items-center justify-center rounded-md bg-gray-200 px-2 py-2 text-[10px] capitalize md:text-[15px]">{tag}</span>
+                                            <span key={index} className={`${spaceGrotesk.className} flex items-center justify-center rounded-md bg-gray-200 px-2 py-2 text-[10px] capitalize md:text-[15px]`}>{tag}</span>
                                         ))}
                                     </div>
 

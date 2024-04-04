@@ -46,77 +46,41 @@ export const SOCIAL_LINKS = [
 
 export const TECHNOLOGIES: TechDetails[] = [
     {
-        label: "HTML"
-    },
-    {
-        label: "CSS"
-    },
-    {
-        label: "Tailwind CSS"
-    },
-    {
-        label: "JavaScript"
-    },
-    {
-        label: "React"
-    },
-    {
-        label: "Next.js"
-    },
-    {
-        label: "Node.js"
-    },
-    {
-        label: "Express.js"
-    },
-    {
-        label: "MongoDB"
-    },
-    {
-        label: "MySQL"
-    },
-    {
-        label: "Postman"
-    },
-    {
-        label: "Rest API"
-    },
-    {
-        label: "C Language"
-    },
-    {
-        label: "Java",
+        label: "Data Structure"
     },
     {
         label: "Algorithm"
     },
     {
-        label: "Data Structure"
+        label: "Back-End Development",
     },
     {
-        label: "Spring Framework"
+        label: "Front-End Development",
     },
     {
-        label: "Spring Boot",
-    },
-    {
-        label: "Spring MVC"
-    },
-    {
-        label: "Theamleaf"
-    },
-    {
-        label: "JPA"
-    },
-    {
-        label: "Hibernate"
+        label: "GitHub",
     },
     {
         label: "Git",
     },
     {
-        label: "GitHub",
+        label: "Python (Programming Language)",
     },
+    {
+        label: "Java",
+    },
+    {
+        label: "C (Programming Language)",
+    },
+    {
+        label: "User Experience (UX)",
+    },
+    {
+        label: "User Interface Design",
+    },
+    {
+        label: "Digital Marketing",
+    }
 ];
 
 export const PROJECTS: ProjectMetadata[] = [
