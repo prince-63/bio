@@ -20,7 +20,7 @@ const Footer = () => {
           >
             coded
           </Link>
-          &nbsp; ❤️️ by Prince Kumar
+          &nbsp; ❤️️ by Prince.
         </Typography>
       </div>
     </footer>
