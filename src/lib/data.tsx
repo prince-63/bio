@@ -88,7 +88,7 @@ export const PROJECTS: ProjectMetadata[] = [
         year: "2024",
         url: "https://github.com/prince-63/your-school",
     },
-    {
+    {/* {
         imageSrc: Microservices,
         title: "Quiz Application System",
         description: "Quiz Application System is a simple Microservice based application that provides two different services. One is the Quiz Service and the other is the Question Service. The Quiz Service provides RESTful API endpoints for managing quiz data like quiz information, questions, and answers. The Question Service provides RESTful API endpoints for managing question question creation, update, delete and get the result of the quiz. the quiz service call to the question service to generate question and answer and calculate the result of the quiz. The Eureka server is used for service discovery and registration. The Eureka client is used for service registration and discovery. The Feign client is used for service communication. The API Gateway is used for routing and load balancing.",
@@ -96,4 +96,5 @@ export const PROJECTS: ProjectMetadata[] = [
         year: "2023",
         url: "https://github.com/prince-63/quiz",
     },
+    */}
 ];
