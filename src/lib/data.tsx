@@ -52,10 +52,7 @@ export const TECHNOLOGIES: TechDetails[] = [
         label: "Algorithm"
     },
     {
-        label: "Back-End Development",
-    },
-    {
-        label: "Front-End Development",
+        label: "Docker",
     },
     {
         label: "GitHub",
@@ -64,25 +61,36 @@ export const TECHNOLOGIES: TechDetails[] = [
         label: "Git",
     },
     {
-        label: "Python (Programming Language)",
-    },
-    {
         label: "Java",
     },
     {
-        label: "C (Programming Language)",
+        label: "Spring Framework",
     },
     {
-        label: "User Experience (UX)",
+        label: "Hibernate",
     },
     {
-        label: "User Interface Design",
+        label: "RESTful Web Services",
     },
     {
-        label: "Digital Marketing",
+        label: "Microservices Architecture",
+    },
+    {
+        label: "JDBC",
+    },
+    {
+        label: "SQL",
+    },
+    {
+        label: "Maven",
+    },
+    {
+        label: "Design Patterns",
+    },
+    {
+        label: "IntelliJ IDEA",
     }
 ];
-
 export const PROJECTS: ProjectMetadata[] = [
     {
         imageSrc: SpringMVC,
