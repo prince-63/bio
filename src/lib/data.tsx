@@ -6,7 +6,7 @@ import Microservices from "../../public/images/Project/Microservices.png";
 
 export const EXTERNAL_LINKS = {
     GITHUB: "https://github.com/prince-63",
-    GITHUB_REPO: "https://github.com/prince-63/princekumar",
+    GITHUB_REPO: "https://github.com/prince-63/bio",
     Linkedin: "https://linkedin.com/princekumar62",
 };
 
@@ -67,7 +67,19 @@ export const TECHNOLOGIES: TechDetails[] = [
         label: "Spring Framework",
     },
     {
+        label: "Spring Boot",
+    },
+    {
+        label: "Spring MVC",
+    },
+    {
+        label: "Swagger API",
+    },
+    {
         label: "Hibernate",
+    },
+    {
+        label: "ORM",
     },
     {
         label: "RESTful Web Services",
@@ -80,6 +92,9 @@ export const TECHNOLOGIES: TechDetails[] = [
     },
     {
         label: "SQL",
+    },
+    {
+        label: "MySQL",
     },
     {
         label: "Maven",
