@@ -37,9 +37,7 @@ export default function ProjectDetails() {
                                             <span key={index} className={`${spaceGrotesk.className} flex items-center justify-center rounded-md bg-gray-200 px-2 py-2 text-[10px] capitalize md:text-[15px]`}>{tag}</span>
                                         ))}
                                     </div>
-
                                 </div>
-
                             </div>
                         ))
                     }

@@ -46,64 +46,80 @@ export const SOCIAL_LINKS = [
 
 export const TECHNOLOGIES: TechDetails[] = [
     {
-        label: "Data Structure"
+        label: "Data Structure",
+        progress: 90,
     },
     {
-        label: "Algorithm"
+        label: "Algorithm",
+        progress: 80,
     },
     {
         label: "Docker",
+        progress: 70,
     },
     {
         label: "GitHub",
+        progress: 80,
     },
     {
         label: "Git",
+        progress: 70,
     },
     {
         label: "Java",
+        progress: 80,
     },
     {
         label: "Spring Framework",
+        progress: 70,
     },
     {
         label: "Spring Boot",
+        progress: 70,
     },
     {
         label: "Spring MVC",
+        progress: 70,
     },
     {
         label: "Swagger API",
+        progress: 60,
     },
     {
         label: "Hibernate",
+        progress: 70,
     },
     {
         label: "ORM",
+        progress: 70,
     },
     {
-        label: "RESTful Web Services",
+        label: "Rest API",
+        progress: 90,
     },
     {
-        label: "Microservices Architecture",
-    },
-    {
-        label: "JDBC",
+        label: "Microservices",
+        progress: 60,
     },
     {
         label: "SQL",
+        progress: 60,
     },
     {
         label: "MySQL",
+        progress: 50,
     },
     {
         label: "Maven",
+        progress: 70,
     },
     {
         label: "Design Patterns",
+        progress: 70,
     },
     {
         label: "IntelliJ IDEA",
+        progress: 80,
     }
 ];
 export const PROJECTS: ProjectMetadata[] = [

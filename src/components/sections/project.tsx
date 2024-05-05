@@ -11,7 +11,7 @@ import ProjectDetails from '../data-display/project-details';
 export default function ProjectSection() {
 
     return (
-        <Container id='project'>
+        <Container id='project' className="bg-gray-50">
             <div className="flex flex-col items-center gap-4">
                 <ScrollAnimation>
                     <div className="self-center">
