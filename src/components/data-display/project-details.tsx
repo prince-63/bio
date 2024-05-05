@@ -4,6 +4,7 @@ import { Github } from "lucide-react";
 import { PROJECTS } from '@/lib/data';
 import Image from "next/image";
 import spaceGrotesk from "../general/space-grotesk-font";
+import Tag from '@/components/data-display/tag';
 
 export default function ProjectDetails() {
     return (
@@ -34,7 +35,8 @@ export default function ProjectDetails() {
                                 <div className="mt-2 flex flex-row justify-between">
                                     <div className="flex flex-row flex-wrap gap-2 font-medium">
                                         {project.tags.map((tag, index) => (
-                                            <span key={index} className={`${spaceGrotesk.className} flex items-center justify-center rounded-md bg-gray-200 px-2 py-2 text-[10px] capitalize md:text-[15px]`}>{tag}</span>
+                                            // <span key={index} className={`${spaceGrotesk.className} flex items-center justify-center rounded-md bg-gray-200 px-2 py-2 text-[10px] capitalize md:text-[15px]`}>{tag}</span>
+                                            <Tag className={`${spaceGrotesk.className} text-lg`} label={tag} key={index}/>
                                         ))}
                                     </div>
                                 </div>
