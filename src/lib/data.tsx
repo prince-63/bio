@@ -38,10 +38,11 @@ export const SOCIAL_LINKS = [
         icon: Github,
         url: "https://github.com/prince-63",
     },
-    {
+   /* {
         icon: Linkedin,
         url: "https://linkedin.com/in/princekumar62",
     },
+    */
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
