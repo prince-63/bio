@@ -45,7 +45,7 @@ const Header = () => {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <Link href="/" noCustomization>
+        <Link href="#home" noCustomization>
           <Logo />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
@@ -60,15 +60,21 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
             <DownloadCV />
-          </div> 
+          </div>
         </div>
 
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
-          <DrawerTrigger asChild className="flex md:hidden">
-            <IconButton>
-              <Menu />
-            </IconButton>
-          </DrawerTrigger>
+          <div className="md:hidden flex items-center gap-4">
+            <div className='md:hidden'>
+              <ThemeSwitcher />
+            </div>
+            <DrawerTrigger asChild className="flex md:hidden">
+              <IconButton>
+                <Menu />
+              </IconButton>
+            </DrawerTrigger>
+          </div>
+
           <DrawerContent>
             <div className="flex items-center justify-between border-b border-gray-100 p-4">
               <Logo />
@@ -98,10 +104,6 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-4 p-4">
-              <div className="flex items-center justify-between">
-                <Typography>Switch Theme</Typography>
-                <ThemeSwitcher />
-              </div>
               <DownloadCV />
             </div>
           </DrawerContent>
