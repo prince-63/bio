@@ -61,15 +61,16 @@ const AboutMeSection = () => {
 
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            I focus on my goals, value productivity, and aim for leadership. I keep my social circle small to avoid distractions.
+                            I began my journey as a web development in 2022, and
+                            since then, I&apos;ve continued to grow and evolve
+                            as a developer, taking on new challenges and
+                            learning the latest technologies along the way.
                         </Typography>
                     </Reavel>
 
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            I am very much a progressive thinker and enjoy
-                            working on products end to end, from ideation all
-                            the way to development.
+                            I focus on my goals, value productivity, and aim for leadership. I keep my social circle small to avoid distractions.
                         </Typography>
                     </Reavel>
                     {/*
