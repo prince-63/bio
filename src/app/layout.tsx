@@ -9,7 +9,7 @@ import InterFont from '@/components/general/InterFont';
 const title = 'Prince Kumar Prasad';
 const description =
   'A self-proclaimed developer who specializes in Backend Development (Spring Boot), from kolkata, India.';
-const url = 'https://princekumar.xyz/';
+const url = 'https://github.com/prince-63/bio';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'web designer',
     'web development',
   ],
-  creator: 'Prince Kumar',
+  creator: 'Prince Kumar Prasad',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
