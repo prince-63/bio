@@ -75,6 +75,7 @@ const AboutMeSection = () => {
                             the way to development.
                         </Typography>
                     </Reavel>
+                    {/*
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
                             When I&apos;m not in full-on developer mode, you can
@@ -90,6 +91,7 @@ const AboutMeSection = () => {
                             .
                         </Typography>
                     </Reavel>
+                    */}
                     <Reavel>
                         <Typography variant={"h6"} className={`${spaceGrotesk.className} text-lg font-bold`}>
                             Finally, some quick bits about me.
