@@ -45,9 +45,7 @@ const Header = () => {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <Link href="https://prince-63.github.io/bio" noCustomization>
-          <Logo />
-        </Link>
+        <Logo />
         <div className="hidden items-center gap-6 md:flex">
           <ul className="flex list-none items-center gap-6">
             {NAV_LINKS.map((link, index) => (
