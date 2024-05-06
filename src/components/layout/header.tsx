@@ -45,7 +45,7 @@ const Header = () => {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <Link href="#home" noCustomization>
+        <Link href="https://prince-63.github.io/bio" noCustomization>
           <Logo />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
