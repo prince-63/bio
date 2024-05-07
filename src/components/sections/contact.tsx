@@ -70,14 +70,14 @@ const ContactSection = () => {
                     <Reavel>
                         <div className="flex items-center gap-4 md:gap-5">
                             <Mail className="h-6 w-6 md:h-8 md:w-8" />
-                            <Link href={`mailto:${email}`}>
+                            {/* <Link href={`mailto:${email}`}> */}
                                 <Typography
                                     className=" font-medium text-opacity-70"
                                     variant="h4"
                                 >
                                     {email}
                                 </Typography>
-                            </Link>
+                            {/*</Link>*/}
                             <IconButton
                                 size={width && width < 768 ? "md" : "lg"}
                                 onClick={() => handleCopyClick(email, "email")}
