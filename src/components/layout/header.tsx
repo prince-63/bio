@@ -21,7 +21,7 @@ import ThemeSwitcher from '../general/theme-switcher';
 
 const Logo = () => (
   <Typography variant="h3" className=" font-semibold">
-    {'<PK/>'}
+    {'<🇮🇳/>'}
   </Typography>
 );
 
