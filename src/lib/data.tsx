@@ -40,7 +40,7 @@ export const SOCIAL_LINKS = [
     },
     {
         icon: Linkedin,
-        url: "https://linkedin.com/in/ecnirpk",
+        url: "https://linkedin.com/in/princekushwaha0",
     },
 ];
 
