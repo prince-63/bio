@@ -14,7 +14,7 @@ import Reavel from "@/hooks/Reavel";
 import spaceGrotesk from "../general/space-grotesk-font";
 import Link from "next/link";
 
-let email = "princekumar.priku@gmail.com";
+let email = "princekushwaha.dev0@gmail.com";
 let phone = "+91 6289296197";
 
 type CopyValue = "email" | "phone";
