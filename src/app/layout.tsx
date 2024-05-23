@@ -6,7 +6,7 @@ import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
 import InterFont from '@/components/general/InterFont';
 
-const title = 'Prince Kumar Prasad';
+const title = 'Prince Kushwaha!';
 const description =
   'A self-proclaimed developer who specializes in Backend Development (Spring Boot), from kolkata, India.';
 const url = 'https://github.com/prince-63/bio';
