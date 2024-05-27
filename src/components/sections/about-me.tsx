@@ -41,14 +41,14 @@ const AboutMeSection = () => {
 
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            I&apos;m a Aspiring{" "}
+                            I&apos;m a {" "}
                             <Link
                                 noCustomization
                                 externalLink
                                 withUnderline
                                 href={EXTERNAL_LINKS.GITHUB}
                             >
-                                developer.
+                                Developer.
                             </Link>{" "}
                             who focuses on backend development, particularly
                             using (Spring Boot). I&apos;m passionate about
@@ -99,7 +99,7 @@ const AboutMeSection = () => {
                         <ul className="flex list-inside list-disc flex-col gap-2">
                             <Reavel>
                                 <Typography component="li" className={`${spaceGrotesk.className} text-lg`}>
-                                    Pursuing B.Tech CSE
+                                    Pursuing B.Tech - CSE
                                 </Typography>
                             </Reavel>
                         </ul>

@@ -41,7 +41,7 @@ const HeroSection = () => {
             </Reavel>
             <Reavel>
               <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
-                Aspiring Backend Developer, focusing Spring Boot, Microservices, Rest API, Docker, Kubernetes. My expertise includes designing, implementing, structuring code and developing scalable, high-performance applications. I always looking for new technologies and frameworks to learn and inhance my skills.
+                Backend Developer, focusing Spring Boot, Microservices, Rest API, Docker, Kubernetes. My expertise includes designing, implementing, structuring code and developing scalable, high-performance applications. I always looking for new technologies and frameworks to learn and inhance my skills.
               </Typography>
             </Reavel>
 
