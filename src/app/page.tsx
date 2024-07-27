@@ -5,7 +5,7 @@ import ContactSection from '@/components/sections/contact';
 import AboutMeSection from '@/components/sections/about-me';
 import SkillsSection from '@/components/sections/skills';
 import { motion, useScroll } from "framer-motion";
-import ProjectSection from '@/components/sections/project';
+// import ProjectSection from '@/components/sections/project';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -18,7 +18,7 @@ export default function Home() {
       <HeroSection />
       <AboutMeSection />
       <SkillsSection />
-      <ProjectSection /> 
+      {/* <ProjectSection />  */}
       <ContactSection />
     </>
   );

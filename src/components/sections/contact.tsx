@@ -14,7 +14,7 @@ import Reavel from "@/hooks/Reavel";
 import spaceGrotesk from "../general/space-grotesk-font";
 import Link from "next/link";
 
-let email = "princekush.co@gmail.com";
+let email = "prince08833@gmail.com";
 let phone = "+91 6289296197";
 
 type CopyValue = "email" | "phone";
@@ -71,12 +71,12 @@ const ContactSection = () => {
                         <div className="flex items-center gap-4 md:gap-5">
                             <Mail className="h-6 w-6 md:h-8 md:w-8" />
                             {/* <Link href={`mailto:${email}`}> */}
-                                <Typography
-                                    className=" font-medium text-opacity-70"
-                                    variant="h4"
-                                >
-                                    {email}
-                                </Typography>
+                            <Typography
+                                className=" font-medium text-opacity-70"
+                                variant="h4"
+                            >
+                                {email}
+                            </Typography>
                             {/*</Link>*/}
                             <IconButton
                                 size={width && width < 768 ? "md" : "lg"}
@@ -90,18 +90,18 @@ const ContactSection = () => {
                             </IconButton>
                         </div>
                     </Reavel>
-                    {/*
+
                     <Reavel>
                         <div className="flex items-center gap-4 md:gap-5">
                             <Phone className="h-6 w-6 md:h-8 md:w-8" />
-                            <Link href={`tel:${phone.replace(' ', '')}`}>
+                            {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
                                 <Typography
                                     className=" font-medium text-opacity-70"
                                     variant="h4"
                                 >
                                     {phone}
                                 </Typography>
-                            </Link>
+                            {/* </Link> */}
                             <IconButton
                                 size={width && width < 768 ? "md" : "lg"}
                                 onClick={() =>
@@ -119,7 +119,7 @@ const ContactSection = () => {
                             </IconButton>
                         </div>
                     </Reavel>
-                    */}
+
                 </div>
 
                 <div className="flex flex-col items-center gap-2">

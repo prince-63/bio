@@ -24,10 +24,6 @@ export const NAV_LINKS = [
         href: "#skills",
     },
     {
-        label: "Projects",
-        href: "#project",
-    },
-    {
         label: "Contact",
         href: "#contact",
     }
@@ -40,7 +36,7 @@ export const SOCIAL_LINKS = [
     },
     {
         icon: Linkedin,
-        url: "https://linkedin.com/in/princekushwaha0",
+        url: "https://linkedin.com/in/prince63",
     },
 ];
 
@@ -54,15 +50,7 @@ export const TECHNOLOGIES: TechDetails[] = [
         progress: 80,
     },
     {
-        label: "Docker",
-        progress: 70,
-    },
-    {
-        label: "GitHub",
-        progress: 80,
-    },
-    {
-        label: "Git",
+        label: "C++",
         progress: 70,
     },
     {
@@ -70,58 +58,51 @@ export const TECHNOLOGIES: TechDetails[] = [
         progress: 80,
     },
     {
-        label: "Spring Framework",
+        label: "Backend Development",
         progress: 70,
-    },
-    {
-        label: "Spring Boot",
-        progress: 70,
-    },
-    {
-        label: "Spring MVC",
-        progress: 70,
-    },
-    {
-        label: "Swagger API",
-        progress: 60,
-    },
-    {
-        label: "Hibernate",
-        progress: 70,
-    },
-    {
-        label: "ORM",
-        progress: 70,
-    },
-    {
-        label: "Rest API",
-        progress: 90,
     },
     {
         label: "Microservices",
         progress: 60,
     },
     {
-        label: "SQL",
+        label: "Spring Framework",
+        progress: 70,
+    },
+    {
+        label: "Docker",
         progress: 60,
     },
     {
+        label: "SQL",
+        progress: 70,
+    },
+    {
         label: "MySQL",
-        progress: 50,
-    },
-    {
-        label: "Maven",
-        progress: 70,
-    },
-    {
-        label: "Design Patterns",
-        progress: 70,
-    },
-    {
-        label: "IntelliJ IDEA",
         progress: 80,
-    }
+    },
+    {
+        label: "MongoDB",
+        progress: 70,
+    },
+    {
+        label: "MySQL",
+        progress: 60,
+    },
+    {
+        label: "React.js",
+        progress: 80,
+    },
+    {
+        label: "JavaScript",
+        progress: 90,
+    },
+    {
+        label: "Version Control",
+        progress: 90,
+    },
 ];
+
 export const PROJECTS: ProjectMetadata[] = [
     {
         imageSrc: SpringMVC,

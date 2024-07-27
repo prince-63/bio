@@ -9,18 +9,9 @@ const Footer = () => {
     <footer className="w-full bg-gray-50 py-6">
       <div className="flex items-center justify-center gap-1">
         <Typography className="flex items-center" variant="body3">
+        Prince &nbsp; | &nbsp;
           <Copyright className="mr-1 inline-block h-4 w-4" />
-          {new Date().getFullYear()} |&nbsp;
-          &nbsp;
-          <Link
-            noCustomization
-            externalLink
-            withUnderline
-            href={EXTERNAL_LINKS.GITHUB_REPO}
-          >
-            coded
-          </Link>
-          &nbsp; ❤️️ by Prince.
+          {new Date().getFullYear()}
         </Typography>
       </div>
     </footer>

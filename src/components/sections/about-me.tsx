@@ -48,10 +48,10 @@ const AboutMeSection = () => {
                                 withUnderline
                                 href={EXTERNAL_LINKS.GITHUB}
                             >
-                                Developer.
+                               Aspiring Developer.
                             </Link>{" "}
-                            who focuses on backend development, particularly
-                            using (Spring Boot). I&apos;m passionate about
+                            who focuses on development, particularly
+                            using (Spring Boot, React.js & Android). I&apos;m passionate about
                             creating visually appealing and seamlessly
                             functioning digital products. I prioritize user
                             experience, perfect designs, and writing clean,
@@ -61,7 +61,7 @@ const AboutMeSection = () => {
 
                     <Reavel>
                         <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            I began my journey as a web development in 2022, and
+                            I began my journey as a developer in 2022, and
                             since then, I&apos;ve continued to grow and evolve
                             as a developer, taking on new challenges and
                             learning the latest technologies along the way.
