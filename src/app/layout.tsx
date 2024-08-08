@@ -6,10 +6,10 @@ import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
 import InterFont from '@/components/general/InterFont';
 
-const title = 'Prince Kushwaha!';
+const title = 'Prince Kumar Prasad!';
 const description =
-  'A self-proclaimed developer who specializes in Backend Development (Spring Boot), from kolkata, India.';
-const url = 'https://github.com/prince-63/bio';
+  'A self-proclaimed developer.';
+const url = 'https://princekumar.xyz';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
