@@ -11,7 +11,7 @@
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
     "@radix-ui/react-dialog": "^1.0.5",
-    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/typography": "^0.5.13",
     "@types/node": "20.12.11",
     "@types/react": "18.3.1",
