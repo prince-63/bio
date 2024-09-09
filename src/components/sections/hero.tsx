@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import { MapPin } from 'lucide-react';
-import PrinceProfile from '../../../public/images/ai-profile.jpg';
-import SocialIcons from '@/components/data-display/social-icons';
-import Typography from '@/components/general/typography';
-import Container from '@/components/layout/container';
-import Reavel from '@/hooks/Reavel';
-import ScrollAnimation from '@/hooks/scrollAnimation';
-import spaceGrotesk from '../general/space-grotesk-font';
+import Image from "next/image";
+import { MapPin } from "lucide-react";
+import PrinceProfile from "../../../public/images/profile_image.jpg";
+import SocialIcons from "@/components/data-display/social-icons";
+import Typography from "@/components/general/typography";
+import Container from "@/components/layout/container";
+import Reavel from "@/hooks/Reavel";
+import ScrollAnimation from "@/hooks/scrollAnimation";
+import spaceGrotesk from "../general/space-grotesk-font";
 
 const HeroSection = () => {
   return (
@@ -21,7 +21,7 @@ const HeroSection = () => {
                   src={PrinceProfile}
                   alt="Headshot of Prince"
                   className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                 ></Image>
                 <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]"></div>
               </div>
@@ -32,32 +32,32 @@ const HeroSection = () => {
         {/* Content */}
         <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
-
             <Reavel>
               <Typography variant="h1">
-                Hi, I&apos;m Prince{' '}
+                Hi, I&apos;m Prince{" "}
                 <span className="inline-block animate-waving-hand">👋</span>
               </Typography>
             </Reavel>
             <Reavel>
               <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
-                Aspiring Developer, focusing Spring Boot, Microservices, Rest API, Docker, & React.js. My expertise includes designing, implementing, structuring code and developing scalable, high-performance applications.
+                Aspiring Developer, focusing Spring Boot, Microservices, Rest
+                API, Docker, & React.js. My expertise includes designing,
+                implementing, structuring code and developing scalable,
+                high-performance applications.
               </Typography>
             </Reavel>
-
           </div>
           <div className="flex flex-col gap-2">
-
             <Reavel>
               <div className="flex gap-2">
                 <MapPin className="stroke-gray-600" />
-                <Typography className={`${spaceGrotesk.className} text-lg `}>Kolkata, India</Typography>
+                <Typography className={`${spaceGrotesk.className} text-lg `}>
+                  Kolkata, India
+                </Typography>
               </div>
             </Reavel>
 
-
             <div className="flex items-center gap-2">
-
               <Reavel>
                 <div className="flex h-6 w-6 items-center justify-center">
                   <span className="relative flex h-3 w-3">
@@ -67,7 +67,9 @@ const HeroSection = () => {
                 </div>
               </Reavel>
               <Reavel>
-                <Typography className={`${spaceGrotesk.className} text-lg`}>Available for new projects</Typography>
+                <Typography className={`${spaceGrotesk.className} text-lg`}>
+                  Available for new projects
+                </Typography>
               </Reavel>
             </div>
           </div>

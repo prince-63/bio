@@ -1,27 +1,27 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 import {
   Drawer,
   DrawerTrigger,
   DrawerClose,
-} from '@/components/navigation/drawer';
-import { DrawerContent } from '@/components/navigation/drawer';
-import { NAV_LINKS } from '@/lib/data';
-import { mergeClasses } from '@/lib/utils';
-import useWindowSize from '@/hooks/use-window-size';
-import useScroll from '@/hooks/use-scroll';
-import Link from '@/components/navigation/link';
-import IconButton from '@/components/general/icon-button';
-import Typography from '@/components/general/typography';
-import DownloadCV from '../general/download-cv';
-import ThemeSwitcher from '../general/theme-switcher';
+} from "@/components/navigation/drawer";
+import { DrawerContent } from "@/components/navigation/drawer";
+import { NAV_LINKS } from "@/lib/data";
+import { mergeClasses } from "@/lib/utils";
+import useWindowSize from "@/hooks/use-window-size";
+import useScroll from "@/hooks/use-scroll";
+import Link from "@/components/navigation/link";
+import IconButton from "@/components/general/icon-button";
+import Typography from "@/components/general/typography";
+import DownloadCV from "../general/download-cv";
+import ThemeSwitcher from "../general/theme-switcher";
 
 const Logo = () => (
   <Typography variant="h3" className=" font-semibold">
-    {'👨‍💻'}
+    {"👨‍💻"}
   </Typography>
 );
 
@@ -40,8 +40,8 @@ const Header = () => {
   return (
     <header
       className={mergeClasses(
-        'sticky top-0 z-30 w-full border-b border-transparent bg-gray max-md:border-gray-100',
-        scrolled ? 'bg-gray/20 backdrop-blur-xl md:border-gray-100' : ''
+        "sticky top-0 z-30 w-full border-b border-transparent bg-gray max-md:border-gray-100",
+        scrolled ? "bg-gray/20 backdrop-blur-xl md:border-gray-100" : "",
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
@@ -63,7 +63,7 @@ const Header = () => {
 
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
           <div className="md:hidden flex items-center gap-4">
-            <div className='md:hidden'>
+            <div className="md:hidden">
               <ThemeSwitcher />
             </div>
             <DrawerTrigger asChild className="flex md:hidden">

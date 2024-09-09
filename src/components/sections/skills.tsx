@@ -1,17 +1,20 @@
-import { TECHNOLOGIES } from '@/lib/data';
-import Tag from '@/components/data-display/tag';
-import Container from '@/components/layout/container';
-import ScrollAnimation from '@/hooks/scrollAnimation';
-import spaceGrotesk from '../general/space-grotesk-font';
-import TechDetail from '../data-display/tech-details';
+import { TECHNOLOGIES } from "@/lib/data";
+import Tag from "@/components/data-display/tag";
+import Container from "@/components/layout/container";
+import ScrollAnimation from "@/hooks/scrollAnimation";
+import spaceGrotesk from "../general/space-grotesk-font";
+import TechDetail from "../data-display/tech-details";
 
 const SkillsSection = () => {
   return (
-    <Container id='skills'>
+    <Container id="skills">
       <div className="flex flex-col items-center">
         <ScrollAnimation>
           <div className="self-center">
-            <Tag className={`${spaceGrotesk.className} text-lg`} label="Core Skills" />
+            <Tag
+              className={`${spaceGrotesk.className} text-lg`}
+              label="Core Skills"
+            />
           </div>
         </ScrollAnimation>
       </div>
@@ -21,7 +24,6 @@ const SkillsSection = () => {
           <TechDetail {...technology} key={index} />
         ))}
       </div>
-
     </Container>
   );
 };

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Button from '@/components/general/button';
+import Button from "@/components/general/button";
 
 const DownloadCV = () => {
   return (
@@ -8,7 +8,9 @@ const DownloadCV = () => {
     //   Get Resume
     // </Button>
     <Button>
-      <a href="https://prince-63.github.io/bio/files/Resume.pdf" download>Get Resume</a>
+      <a href="https://prince-63.github.io/bio/files/Resume.pdf" download>
+        Get Resume
+      </a>
     </Button>
   );
 };

@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { mergeClasses } from '@/lib/utils';
-import Typography from '@/components/general/typography';
+import { mergeClasses } from "@/lib/utils";
+import Typography from "@/components/general/typography";
 
 interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
   label?: string;
@@ -12,8 +12,8 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>(
     return (
       <div
         className={mergeClasses(
-          'flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1',
-          className
+          "flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1",
+          className,
         )}
         {...props}
       >
@@ -22,9 +22,9 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>(
         </Typography>
       </div>
     );
-  }
+  },
 );
 
-Tag.displayName = 'Tag';
+Tag.displayName = "Tag";
 
 export default Tag;

@@ -1,21 +1,21 @@
-import * as React from 'react';
-import { cva, type VariantProps } from 'class-variance-authority';
+import * as React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
 
-import { mergeClasses } from '@/lib/utils';
+import { mergeClasses } from "@/lib/utils";
 
 const iconButtonVariants = cva(
-  'flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700',
+  "flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700",
   {
     variants: {
       size: {
-        md: '[&_svg]:w-6 [&_svg]:h-6',
-        lg: '[&_svg]:w-8 [&_svg]:h-8',
+        md: "[&_svg]:w-6 [&_svg]:h-6",
+        lg: "[&_svg]:w-8 [&_svg]:h-8",
       },
     },
     defaultVariants: {
-      size: 'md',
+      size: "md",
     },
-  }
+  },
 );
 
 export interface IconButtonProps
@@ -33,18 +33,18 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
       size,
       asChild = false,
       showTooltip = false,
-      tooltipText = '',
+      tooltipText = "",
       children,
       ...props
     },
-    ref
+    ref,
   ) => {
     return (
       <button
         className={mergeClasses(
-          'relative',
+          "relative",
           iconButtonVariants({ size }),
-          className
+          className,
         )}
         ref={ref}
         {...props}
@@ -57,9 +57,9 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
         )}
       </button>
     );
-  }
+  },
 );
 
-IconButton.displayName = 'IconButton';
+IconButton.displayName = "IconButton";
 
 export default IconButton;

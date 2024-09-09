@@ -1,47 +1,49 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
-import './globals.css';
-import Header from '@/components/layout/header';
-import { Providers } from '@/lib/providers';
-import Footer from '@/components/layout/footer';
-import InterFont from '@/components/general/InterFont';
+import "./globals.css";
+import Header from "@/components/layout/header";
+import { Providers } from "@/lib/providers";
+import Footer from "@/components/layout/footer";
+import InterFont from "@/components/general/InterFont";
 
-const title = 'Prince Kumar Prasad!';
-const description =
-  'A self-proclaimed developer.';
-const url = 'https://princekumar.xyz';
+const title = "Prince Kumar Prasad!";
+const description = "A self-proclaimed developer.";
+const url = "https://princekumar.xyz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    'Backend Developer',
-    'Backend Development',
-    'Spring Boot',
-    'Microservices',
-    'Rest API',
-    'Docker',
-    'Kubernetes',
-    'fullstack developer',
-    'frontend developer',
-    'rest api developer',
-    'ui developer',
-    'ux developer',
-    'web developer',
-    'web designer',
-    'web development',
+    "Backend Developer",
+    "Backend Development",
+    "Spring Boot",
+    "Microservices",
+    "Rest API",
+    "Docker",
+    "Kubernetes",
+    "fullstack developer",
+    "frontend developer",
+    "rest api developer",
+    "ui developer",
+    "ux developer",
+    "web developer",
+    "web designer",
+    "web development",
   ],
-  creator: 'Prince Kumar Prasad',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  creator: "Prince Kumar Prasad",
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
+};
+
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
 };
 
 export default function RootLayout({
@@ -51,7 +53,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      <body className={`${InterFont.className} bg-gray text-gray-600 antialiased scroll-smooth`}>
+      <body
+        className={`${InterFont.className} bg-gray text-gray-600 antialiased scroll-smooth`}
+      >
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>
