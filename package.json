@@ -13,7 +13,7 @@
     "@bradgarropy/next-google-analytics": "^1.0.2",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
-    "@tailwindcss/typography": "^0.5.13",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "22.5.4",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
