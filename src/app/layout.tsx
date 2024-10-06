@@ -5,6 +5,7 @@ import Header from "@/components/layout/header";
 import { Providers } from "@/lib/providers";
 import Footer from "@/components/layout/footer";
 import InterFont from "@/components/general/InterFont";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const title = "Prince Kumar Prasad!";
 const description = "A self-proclaimed developer.";
@@ -62,6 +63,7 @@ export default function RootLayout({
           <Footer />
         </Providers>
       </body>
+      <GoogleAnalytics gaId={"G-FRKB4JVG1L"} />
     </html>
   );
 }

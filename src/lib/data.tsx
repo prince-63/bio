@@ -6,8 +6,8 @@ import Microservices from "../../public/images/Project/Microservices.png";
 
 export const EXTERNAL_LINKS = {
   GITHUB: "https://github.com/prince-63",
-  GITHUB_REPO: "https://github.com/prince-63",
-  Linkedin: "https://github.com/prince-63",
+  GITHUB_REPO: "https://github.com/prince-63/bio",
+  Linkedin: "https://linkedin.com/in/prince63",
 };
 
 export const NAV_LINKS = [
