@@ -5,7 +5,6 @@ import { PROJECTS } from "@/lib/data";
 import Image from "next/image";
 import spaceGrotesk from "../general/space-grotesk-font";
 import Tag from "@/components/data-display/tag";
-import Link from "next/link";
 
 export default function ProjectDetails() {
   return (
@@ -41,7 +40,7 @@ export default function ProjectDetails() {
                     onClick={() => window.open(project.url, "_blank")}
                     size={16}
                   />
-                  Github
+                  GitHub
                   <div className="hover:bg-gray-50 [&_svg]:stroke-gray-500">
                     <ExternalLink width={20} />
                   </div>

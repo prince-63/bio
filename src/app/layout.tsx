@@ -1,10 +1,9 @@
 import { Metadata } from "next";
-
 import "./globals.css";
 import Header from "@/components/layout/header";
 import { Providers } from "@/lib/providers";
 import Footer from "@/components/layout/footer";
-import InterFont from "@/components/general/InterFont";
+import InterFont from "@/components/general/inter-font";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const title = "Prince Kumar Prasad!";
@@ -31,6 +30,14 @@ export const metadata: Metadata = {
     "web developer",
     "web designer",
     "web development",
+    "Android Developer",
+    "Mobile Developer",
+    "Mobile Development",
+    "Flutter Developer",
+    "Jetpack Compose Developer",
+    "React Developer",
+    "Next Developer",
+    "Node Developer",
   ],
   creator: "Prince Kumar Prasad",
   icons: {

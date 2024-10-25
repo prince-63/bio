@@ -40,10 +40,12 @@ const HeroSection = () => {
             </Reavel>
             <Reavel>
               <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
-                Aspiring Developer, focusing Spring Boot, Microservices, Rest
-                API, Docker, & React.js. My expertise includes designing,
-                implementing, structuring code and developing scalable,
-                high-performance applications.
+                Self-Taught Web & App Developer with Proficiency in Spring Boot,
+                Microservices, REST APIs, Node.js, Express.js, React.js,
+                Next.js, Flutter, and Jetpack Compose | Dedicated to Creating
+                Scalable, High-Performance Mobile and Web Applications with
+                Clean Code, Maintanable Architecture, and Seamless User
+                Experiences.
               </Typography>
             </Reavel>
           </div>

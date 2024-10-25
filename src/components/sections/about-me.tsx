@@ -3,8 +3,6 @@ import PrinceKumar from "../../../public/images/about_image.jpg";
 import Tag from "@/components/data-display/tag";
 import Container from "@/components/layout/container";
 import Typography from "@/components/general/typography";
-import Link from "@/components/navigation/link";
-import { EXTERNAL_LINKS } from "@/lib/data";
 import Reavel from "@/hooks/Reavel";
 import spaceGrotesk from "../general/space-grotesk-font";
 
@@ -32,66 +30,51 @@ const AboutMeSection = () => {
         </div>
 
         {/* Content */}
-        <div className="flex max-w-xl flex-col gap-6">
+        <div className="flex max-w-xl flex-col gap-3">
           <Reavel>
             <Typography
               variant="h5"
               className={`${spaceGrotesk.className} text-lg`}
             >
-              Curious about me? Here you have it:
+              Curious about me? Here&apos;s a bit of my journey:
             </Typography>
           </Reavel>
 
           <Reavel>
             <Typography className={`${spaceGrotesk.className} text-lg`}>
-              I&apos;m a{" "}
-              <Link
-                noCustomization
-                externalLink
-                withUnderline
-                href={EXTERNAL_LINKS.GITHUB}
-              >
-                Aspiring Developer.
-              </Link>{" "}
-              who focuses on development, particularly using (Spring Boot,
-              React.js & Android). I&apos;m passionate about creating visually
-              appealing and seamlessly functioning digital products. I
-              prioritize user experience, perfect designs, and writing clean,
-              efficient code.
+              I&apos;m a self-taught Web & App Developer with expertise in
+              Spring Boot, Microservices, REST APIs, Node.js, Express.js,
+              React.js, Next.js, Flutter, and Jetpack Compose. I&apos;m
+              passionate about creating scalable, high-performance mobile and
+              web applications with a focus on clean code, maintainable
+              architecture, and seamless user experiences.
             </Typography>
           </Reavel>
 
           <Reavel>
             <Typography className={`${spaceGrotesk.className} text-lg`}>
-              I began my journey as a developer in 2022, and since then,
-              I&apos;ve continued to grow and evolve as a developer, taking on
-              new challenges and learning the latest technologies along the way.
+              Since starting my development journey in 2022, I&apos;ve taken a
+              proactive approach to growth, consistently challenging myself with
+              complex projects and advancing my skills in frameworks like Spring
+              Boot and Jetpack Compose. My goal is to build solutions that not
+              only perform exceptionally but are polished and intuitive for
+              users. I prioritize creating high-quality applications, grounded
+              in clean, maintainable code and scalable design, always aiming for
+              visually engaging and user-centered experiences.
             </Typography>
           </Reavel>
 
           <Reavel>
             <Typography className={`${spaceGrotesk.className} text-lg`}>
-              I focus on my goals, value productivity, and aim for leadership. I
-              keep my social circle small to avoid distractions.
+              Driven by a continuous desire to grow, I prioritize productivity
+              and seek out projects that expand my skill set. Staying focused on
+              my goals, I embrace new opportunities to deepen my expertise while
+              minimizing distractions. This disciplined approach keeps me
+              adaptable, innovative, and ready to tackle complex
+              challenges—qualities I believe make me a valuable addition to any
+              team striving for excellence.
             </Typography>
           </Reavel>
-          {/*
-                    <Reavel>
-                        <Typography className={`${spaceGrotesk.className} text-lg`}>
-                            When I&apos;m not in full-on developer mode, you can
-                            find me on{" "}
-                            <Link
-                                noCustomization
-                                externalLink
-                                withUnderline
-                                href={EXTERNAL_LINKS.Linkedin}
-                            >
-                                Linkedin
-                            </Link>
-                            .
-                        </Typography>
-                    </Reavel>
-                    */}
           <Reavel>
             <Typography
               variant={"h6"}

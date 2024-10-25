@@ -4,7 +4,6 @@ import Tag from "@/components/data-display/tag";
 import Container from "@/components/layout/container";
 import ScrollAnimation from "@/hooks/scrollAnimation";
 import spaceGrotesk from "../general/space-grotesk-font";
-import Reavel from "@/hooks/Reavel";
 import Typography from "../general/typography";
 import ProjectDetails from "../data-display/project-details";
 
