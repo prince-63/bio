@@ -15,7 +15,7 @@ export default function ProjectSection() {
           <div className="self-center">
             <Tag
               className={`${spaceGrotesk.className} text-lg`}
-              label="Featured Projects"
+              label="Projects"
             />
           </div>
         </ScrollAnimation>
@@ -24,8 +24,8 @@ export default function ProjectSection() {
           variant="subtitle"
           className={`${spaceGrotesk.className} max-w-lg text-center`}
         >
-          Here are some of the selected projects that showcase my passion for
-          backend development.
+          Here are some projects that showcase Prince&apos;s passion for web and
+          app development.
         </Typography>
       </div>
 

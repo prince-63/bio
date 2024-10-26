@@ -34,18 +34,18 @@ const HeroSection = () => {
           <div className="flex flex-col gap-2">
             <Reavel>
               <Typography variant="h1">
-                Hi, I&apos;m Prince{" "}
+                Hello, he is Prince{" "}
                 <span className="inline-block animate-waving-hand">👋</span>
               </Typography>
             </Reavel>
             <Reavel>
               <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
-                Self-Taught Web & App Developer with Proficiency in Spring Boot,
-                Microservices, REST APIs, Node.js, Express.js, React.js,
-                Next.js, Flutter, and Jetpack Compose | Dedicated to Creating
-                Scalable, High-Performance Mobile and Web Applications with
-                Clean Code, Maintanable Architecture, and Seamless User
-                Experiences.
+                A self-taught web and app developer with expertise in Spring
+                Boot, microservices, REST APIs, Node.js, Express.js, React.js,
+                Next.js, Flutter, and Jetpack Compose. Prince is dedicated to
+                building scalable, high-performance mobile and web applications
+                with clean code, maintainable architecture, and seamless user
+                experiences.
               </Typography>
             </Reavel>
           </div>

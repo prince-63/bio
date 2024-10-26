@@ -49,7 +49,7 @@ const ContactSection = () => {
         <div className="self-center">
           <Tag
             className={`${spaceGrotesk.className} text-lg`}
-            label="Get in touch"
+            label="Contact"
           />
         </div>
 
@@ -58,8 +58,8 @@ const ContactSection = () => {
             variant="subtitle"
             className={`${spaceGrotesk.className} max-w-xl text-center text-lg`}
           >
-            What’s next? Feel free to reach out to me if you are looking for a
-            developer, have a query, or simply want to connect.
+            What&apos;s next? Feel free to reach out to Prince if you are looking for
+            a developer, have a query, or simply want to connect.
           </Typography>
         </Reavel>
       </div>
