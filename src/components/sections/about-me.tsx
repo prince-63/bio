@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import PrinceKumar from "../../../public/images/about_image.jpg";
 import Tag from "@/components/data-display/tag";

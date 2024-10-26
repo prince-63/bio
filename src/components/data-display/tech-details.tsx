@@ -3,6 +3,7 @@
 import { TechDetails } from "@/lib/types";
 import Typography from "@/components/general/typography";
 import spaceGrotesk from "../general/space-grotesk-font";
+import Reavel from "@/hooks/Reavel";
 
 const TechDetail = ({ label, progress }: TechDetails) => {
   return (

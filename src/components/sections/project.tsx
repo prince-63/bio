@@ -6,6 +6,7 @@ import ScrollAnimation from "@/hooks/scrollAnimation";
 import spaceGrotesk from "../general/space-grotesk-font";
 import Typography from "../general/typography";
 import ProjectDetails from "../data-display/project-details";
+import Reavel from "@/hooks/Reavel";
 
 export default function ProjectSection() {
   return (
@@ -20,13 +21,15 @@ export default function ProjectSection() {
           </div>
         </ScrollAnimation>
 
-        <Typography
-          variant="subtitle"
-          className={`${spaceGrotesk.className} max-w-lg text-center`}
-        >
-          Here are some projects that showcase Prince&apos;s passion for web and
-          app development.
-        </Typography>
+        <Reavel>
+          <Typography
+            variant="subtitle"
+            className={`${spaceGrotesk.className} max-w-lg text-center`}
+          >
+            Here are some projects that showcase Prince&apos;s passion for web
+            and app development.
+          </Typography>
+        </Reavel>
       </div>
 
       <div>

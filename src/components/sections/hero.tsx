@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 import PrinceProfile from "../../../public/images/profile_image.jpg";
@@ -34,8 +36,14 @@ const HeroSection = () => {
           <div className="flex flex-col gap-2">
             <Reavel>
               <Typography variant="h1">
-                Hello, he is Prince{" "}
+                Hello
                 <span className="inline-block animate-waving-hand">👋</span>
+                {","}
+              </Typography>
+            </Reavel>
+            <Reavel>
+              <Typography variant="h1">
+                He&apos;s <span className="text-emerald-500">Prince</span>{"."}
               </Typography>
             </Reavel>
             <Reavel>
