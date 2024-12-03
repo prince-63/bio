@@ -42,41 +42,24 @@ const AboutMeSection = () => {
             </Typography>
           </Reavel>
 
-          <Reavel>
-            <Typography className={`${spaceGrotesk.className} text-lg`}>
-              Prince is a self-taught web and app developer with expertise in
-              Spring Boot, microservices, REST APIs, Node.js, Express.js,
-              React.js, Next.js, Flutter, and Jetpack Compose. He is passionate
-              about creating scalable, high-performance mobile and web
-              applications with a focus on clean code, maintainable
-              architecture, and seamless user experiences.
-            </Typography>
-          </Reavel>
+         <Reavel>
+          <Typography className={`${spaceGrotesk.className} text-lg`}>
+            Prince is a Developer with expertise in Application Development. He is passionate about building scalable, high-performance applications that combine clean code, maintainable architecture, and seamless user experiences.
+          </Typography>
+        </Reavel>
+          
+        <Reavel>
+          <Typography className={`${spaceGrotesk.className} text-lg`}>
+            Since beginning his development journey in 2022, Prince has worked on challenging projects, sharpening his skills in modern frameworks and technologies. His commitment to creating polished, intuitive solutions makes him a valuable collaborator for teams aiming to deliver exceptional user experiences.
+          </Typography>
+        </Reavel>
 
           <Reavel>
             <Typography className={`${spaceGrotesk.className} text-lg`}>
-              Since beginning his development journey in 2022, Prince has taken
-              a proactive approach to growth, challenging himself with complex
-              projects and advancing his skills in frameworks like Spring Boot
-              and Jetpack Compose. His goal is to build solutions that not only
-              perform exceptionally but are polished and intuitive for users. He
-              prioritizes high-quality applications grounded in clean,
-              maintainable code and scalable design, always aiming for visually
-              engaging, user-centered experiences.
+              Always eager to take on new challenges, Prince prioritizes innovation and continuous learning. His disciplined and goal-oriented mindset ensures that he brings adaptability, creativity, and impact to every project, making him an ideal partner for exciting collaborations or professional opportunities.
             </Typography>
           </Reavel>
 
-          <Reavel>
-            <Typography className={`${spaceGrotesk.className} text-lg`}>
-              Driven by a continuous desire for growth, Prince prioritizes
-              productivity and seeks projects that expand his skill set. Staying
-              focused on his goals, he embraces opportunities to deepen his
-              expertise while minimizing distractions. This disciplined approach
-              keeps him adaptable, innovative, and ready to tackle complex
-              challenges—qualities he believes make him a valuable addition to
-              any team striving for excellence.
-            </Typography>
-          </Reavel>
           <Reavel>
             <Typography
               variant={"h6"}
