@@ -48,12 +48,7 @@ const HeroSection = () => {
             </Reavel>
             <Reavel>
               <Typography className={`${spaceGrotesk.className} text-lg mt-3`}>
-                A Developer with expertise in Spring
-                Boot, microservices, REST APIs, Node.js, Express.js, React.js,
-                Next.js, Flutter, and Jetpack Compose. Prince is dedicated to
-                building scalable, high-performance mobile and web applications
-                with clean code, maintainable architecture, and seamless user
-                experiences.
+                Developer with expertise in Spring Boot, microservices, REST APIs, Node.js, Express.js, React.js, Next.js, and Flutter. Passionate about building scalable, high-performance applications with clean code and seamless user experiences.
               </Typography>
             </Reavel>
           </div>
