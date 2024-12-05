@@ -244,7 +244,7 @@ export const PROJECTS: ProjectMetadata[] = [
       "Responsive Design",
     ],
     year: "December, 2023 - Present",
-    url: "https://github.com/prince-63/bio",
+    url: "https://princekumar.xyz",
   },
   {
     imageSrc: WebApplicationImage,
