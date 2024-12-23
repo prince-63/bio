@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
-    "@next/third-parties": "^14.2.15",
+    "@next/third-parties": "^15.1.2",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/typography": "^0.5.15",
