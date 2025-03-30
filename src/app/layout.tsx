@@ -5,9 +5,10 @@ import { Providers } from "@/lib/providers";
 import Footer from "@/components/layout/footer";
 import InterFont from "@/components/general/inter-font";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Karla } from "next/font/google";
 
 const title = "Prince Kumar Prasad!";
-const description = "A self-proclaimed developer.";
+const description = "Prince Kumar Prasad is a Backend Developer, Mobile Developer, and Web Developer. He is proficient in Java, Spring Boot, Microservices, Docker, Kubernetes, Flutter, React, Next.js, and Node.js. He is also a UI/UX designer with experience in Figma and Adobe XD.";
 const url = "https://princekumar.xyz";
 
 export const metadata: Metadata = {
@@ -54,6 +55,13 @@ export const viewport = {
   ],
 };
 
+export const karla = Karla({
+  weight: ["300", "400", "500", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-karla",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -62,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${InterFont.className} bg-gray text-gray-600 antialiased scroll-smooth`}
+        className={`${karla.className} bg-gray text-gray-600 antialiased scroll-smooth`}
       >
         <Providers>
           <Header />

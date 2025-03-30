@@ -147,6 +147,25 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const PROJECTS: ProjectMetadata[] = [
   {
+    imageSrc: WebApplicationImage,
+    title: "Nevo Code",
+    description:
+      "Nevo Code is a self-paced learning platform designed to provide in-depth guides on computer science, system design, clean code, and more. Built for efficiency, it helps learners grasp complex concepts faster while enhancing their skills with structured, time-efficient learning resources.",
+    tags: [
+      "JavaScript",
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "Git",
+      "GitHub",
+      "OAuth",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
+    year: "Feb, 2025 - Present",
+    url: "https://nevocode.vercel.app",
+  },
+  {
     imageSrc: MobileAndWebApplicationImage,
     title: "Geotrackr",
     description:
@@ -166,7 +185,7 @@ export const PROJECTS: ProjectMetadata[] = [
       "Git",
       "GitHub",
     ],
-    year: "June, 2024 - Octuber, 2024",
+    year: "June, 2024 - October, 2024",
     url: "https://github.com/prince-63/geotrackr",
   },
   {
