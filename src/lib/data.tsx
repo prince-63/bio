@@ -162,7 +162,7 @@ export const PROJECTS: ProjectMetadata[] = [
       "Tailwind CSS",
       "TypeScript",
     ],
-    year: "Feb, 2025 - Present",
+    year: "Feb, 2025 - April 2025",
     url: "https://nevocode.vercel.app",
   },
   {
