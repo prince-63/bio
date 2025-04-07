@@ -3,12 +3,12 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import { Providers } from "@/lib/providers";
 import Footer from "@/components/layout/footer";
-import InterFont from "@/components/general/inter-font";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Karla } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
-const title = "Prince Kumar Prasad!";
-const description = "Prince Kumar Prasad is a Backend Developer, Mobile Developer, and Web Developer. He is proficient in Java, Spring Boot, Microservices, Docker, Kubernetes, Flutter, React, Next.js, and Node.js. He is also a UI/UX designer with experience in Figma and Adobe XD.";
+const title = "Welcome to Prince Kumar Prasad's Portfolio";
+const description =
+  "Prince is a Developer with a passion for creating innovative solutions. He specializes in various technologies, including Java, Spring Boot, Flutter, and more. With a strong foundation in backend development and a keen interest in mobile app development, Prince is dedicated to delivering high-quality software that meets the needs of users and businesses alike.";
 const url = "https://princekumar.xyz";
 
 export const metadata: Metadata = {
@@ -16,29 +16,16 @@ export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "Backend Developer",
-    "Backend Development",
+    "Prince Kumar Prasad",
+    "Portfolio",
+    "Developer",
+    "Java",
     "Spring Boot",
-    "Microservices",
-    "Rest API",
-    "Docker",
-    "Kubernetes",
-    "fullstack developer",
-    "frontend developer",
-    "rest api developer",
-    "ui developer",
-    "ux developer",
-    "web developer",
-    "web designer",
-    "web development",
-    "Android Developer",
-    "Mobile Developer",
-    "Mobile Development",
-    "Flutter Developer",
-    "Jetpack Compose Developer",
-    "React Developer",
-    "Next Developer",
-    "Node Developer",
+    "Flutter",
+    "Next.js",
+    "React.js",
+    "Tailwind CSS",
+    "TypeScript",
   ],
   creator: "Prince Kumar Prasad",
   icons: {
@@ -78,7 +65,7 @@ export default function RootLayout({
           <Footer />
         </Providers>
       </body>
-      <GoogleAnalytics gaId={"G-FRKB4JVG1L"} />
+      <Analytics />
     </html>
   );
 }
